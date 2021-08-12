@@ -1,0 +1,128 @@
+/********* BODY INDEX ********/
+body{
+    font-family: 'roboto', sans-serif;
+    color:#303030;
+    margin: 0 auto;
+    display:grid;
+    grid-gap:0em;
+    grid-template-rows: 0.02fr 0.05fr 0.3fr 0.15fr 0.2fr;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "header"
+    "subheadMenus"
+    "mainMenus"
+    "sectionMenus"
+    "footer" 
+}
+
+.title{
+    font-family:'Shrikhand', sans-serif;
+}
+
+/****************************** MENU 01 ******************************/
+
+.subheadMenus{
+    width:100%;
+    height:200px;
+    overflow:hidden;
+}
+
+.subheadMenus img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+}
+
+.mainMenus{
+    background-color:#f6f6f6;
+}
+
+.titreMenus{
+    display:flex;
+    justify-content: space-between;
+    margin:20px;
+}
+
+.titreMenus i{
+    padding-top:25px;
+    padding-right:20px;
+}
+.mainMenus h5{
+    color:#6b6b6b;
+    width:40px;
+    height:25px;
+    border:solid;
+    border-color:#99E2D0;
+    border-top:none;
+    border-left:none;
+    border-right:none;
+    margin-left:20px;
+    margin-top:30px;
+}
+
+.mainMenus h4{
+    font-weight:bold;
+    margin-top:10px;
+    margin-left:5px;
+}
+
+.mainMenus p{
+    color:#6b6b6b;
+    margin-top:3px;
+    margin-left:5px;
+}
+
+.liste{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.elements{
+    width:300px;
+    height:50px;
+    border-radius:4vmin 4vmin 4vmin 4vmin;
+    box-shadow: 1px 0.5px 5px rgb(156, 156, 156);
+    background-color:#ffffff;
+    padding:5px;
+    margin:7px;
+    line-height:0em;
+}
+
+.description{
+    display:flex;
+    justify-content: space-between;
+}
+
+.tarifs{
+    font-weight:bold;
+    color:#303030;
+}
+
+.sectionMenus{
+    background-color:#f6f6f6;
+    text-align:center;
+    padding-top:20px;
+}
+
+.sectionMenus input{
+    width:200px;
+    height:50px;
+    background: linear-gradient(#FF79DA, #9356DC);
+    border-radius:6vmin 6vmin 6vmin 6vmin;
+    box-shadow: 1px 0.5px 5px rgb(156, 156, 156);
+    color:#ffffff;
+    font-weight: bold;
+    margin-top:20px;
+    border:none;
+}
+
+/****************************** MENU 02 ******************************/
+
+
+
+/****************************** MENU 03 ******************************/
+
+
+
+/****************************** MENU 04 ******************************/
