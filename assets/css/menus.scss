@@ -2,14 +2,14 @@
 body{
     font-family: 'roboto', sans-serif;
     color:#303030;
+    background-color:#f6f6f6;
     margin: 0 auto;
     display:grid;
     grid-gap:0em;
-    grid-template-rows: 0.02fr 0.05fr 0.3fr 0.15fr 0.2fr;
+    grid-template-rows: 0.02fr 0.3fr 0.15fr 0.2fr;
     grid-template-columns: 1fr;
     grid-template-areas:
     "header"
-    "subheadMenus"
     "mainMenus"
     "sectionMenus"
     "footer" 
@@ -19,22 +19,38 @@ body{
     font-family:'Shrikhand', sans-serif;
 }
 
-/****************************** MENU 01 ******************************/
+/****************************** MENUS ******************************/
 
-.subheadMenus{
+.img_menu{
+    position: relative;
     width:100%;
-    height:200px;
+    height:250px;
+    z-index:1;
     overflow:hidden;
 }
 
-.subheadMenus img{
+.img_menu img{
     width:100%;
     height:250px;
+    overflow:hidden;
     object-fit:cover;
 }
 
-.mainMenus{
+.desc_menu{
+    position:relative;
+    top:-70px;
+    bottom:200px;
+    width:100%;
+    height:910px;
+    z-index:2;
+    border-radius:10vmin 10vmin 0vmin 0vmin;
     background-color:#f6f6f6;
+}
+
+.part{
+    display:flex;
+   /* justify-content: space-around;*/
+    align-items:center;
 }
 
 .titreMenus{
@@ -48,11 +64,11 @@ body{
     padding-right:20px;
 }
 .mainMenus h5{
-    color:#6b6b6b;
     width:40px;
     height:25px;
     border:solid;
     border-color:#99E2D0;
+    color:#6b6b6b;
     border-top:none;
     border-left:none;
     border-right:none;
@@ -116,13 +132,3 @@ body{
     margin-top:20px;
     border:none;
 }
-
-/****************************** MENU 02 ******************************/
-
-
-
-/****************************** MENU 03 ******************************/
-
-
-
-/****************************** MENU 04 ******************************/
