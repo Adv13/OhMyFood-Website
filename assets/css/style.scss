@@ -231,7 +231,6 @@ header{
     object-fit:cover;
 }
 
-/************************** INDEX PAGE FIN ************************/
 /******************************** FOOTER **************************/
 
 footer{
@@ -244,21 +243,6 @@ footer i{
     margin-top:13px;
     margin-right:10px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /************************************************************************/
@@ -300,10 +284,38 @@ footer i{
     @media (min-width:768px) and (max-width: 891.98px) {
     /********************************************************************/
     
+        .main{
+            padding-top:40px;
+            padding-bottom:20px;
+        }
 
+        .sidebar{
+            display:flex;
+            flex-direction:column;
+            justify-content: space-around;
+            align-items:center;
+            padding-top:40px;
+            padding-bottom:20px;
+        }
+        
+        .allFilters{
+            width:360px;
+            height:300px;
+        }
 
+        #Fonctionnement{
+            margin-left:-150px;
+        }
 
+        .textPosition{
+            padding-left:10px;
+        }
 
+        .large_screen{
+            display:flex;
+            flex-wrap: wrap;
+            margin-top:30px;
+        }
 
 
     }
@@ -313,7 +325,46 @@ footer i{
 /* Large devices (desktops, less than 1600px)*/
     @media (min-width:892px) and (max-width:1599.98px){
 
+        .main{
+            padding-top:40px;
+            padding-bottom:40px;
+        }
 
+        .sidebar{
+            display:flex;
+            padding-top:40px;
+            padding-bottom:0px;
+            padding-left:170px;
+        }
+        
+        .allFilters{
+            display:flex;
+            flex-direction:row;
+            align-items: center;
+            width:1160px;
+            height:300px;
+            margin-right:50px;
+        }
+
+        .filters{
+            margin-right:100px;
+        }
+
+        #Fonctionnement{
+            margin-left:-150px;
+        }
+
+        .textPosition{
+            padding-left:10px;
+        }
+
+        .large_screen{
+            display:flex;
+            flex-wrap: wrap;
+            margin-top:0px;
+            margin-left:1px;
+            margin-right:1px;
+        }
 
 
 
@@ -326,6 +377,46 @@ footer i{
     @media (min-width:1600px) and (max-width: 2399.98px) {
     /********************************************************************/
     
+    .main{
+        padding-top:40px;
+        padding-bottom:40px;
+    }
+
+    .sidebar{
+        display:flex;
+        padding-top:40px;
+        padding-bottom:0px;
+        padding-left:170px;
+    }
+    
+    .allFilters{
+        display:flex;
+        flex-direction:row;
+        align-items: center;
+        width:1460px;
+        height:300px;
+        margin-right:50px;
+    }
+
+    .filters{
+        margin-right:100px;
+    }
+
+    #Fonctionnement{
+        margin-left:-150px;
+    }
+
+    .textPosition{
+        padding-left:10px;
+    }
+
+    .large_screen{
+        display:flex;
+        flex-wrap: wrap;
+        margin-top:0px;
+        margin-left:1px;
+        margin-right:1px;
+    }
 
 
 
