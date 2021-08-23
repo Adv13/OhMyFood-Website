@@ -152,62 +152,65 @@
 
 
 <!--
- <script src="https://kit.fontawesome.com/2ac2bd5913.js" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/2ac2bd5913.js" crossorigin="anonymous"></script>
 
- <div class="liste">
-     <div class="elements">
-       <div class="description">
-         <div class="text">
-           <h4>Fricassée d'escargot</h4>
-           <p>Au pimet d'espelette</p>
-         </div>
-         <div class="tarifs">
-           <p>25€</p>
-         </div>
-         <div class="validate">
-           <i class="fas fa-check-circle white"></i>
-         </div>
-       </div>
-       
-     </div>
-     <div class="elements">
-       
-       <div class="description">
-         <div class="text">
-           <h4>Foie gras de canard mi-cuit</h4>
-           <p>Et ses copeaux de truffe noire</p>
-         </div>
-         <div class="tarifs">
-           <p>35€</p>
-         </div>
-         <div class="validate">
-           <i class="fas fa-check-circle fa-spin white"></i>
-         </div>
-       </div>
-       
-     </div>
-     <div class="elements"> 
-       <div class="description">
-         <div class="text">
-           <h4>Oeuf au plat</h4>
-           <p>Assaisonné à la truffe sur lit de chaussettes</p>
-         </div>
-         <div class="tarifs">
-            <p>20€</p>
-         </div>
-         <div class="validate">
-           <i class="fas fa-check-circle white"></i>
-         </div>
-       </div>
-     </div>
- </div>
-
-
-
-
-
+  <div class="liste">
+      <a href="#" class="elements">
+        <div class="description">
+          <div class="menu">
+            <div class="text">
+              <h4>Fricassée d'escargot</h4>
+              <p>Au pimet d'espelette</p>
+            </div>
+            <div class="tarifs">
+              <p>25€</p>
+            </div>
+          </div>
+          <div class="validate">
+            <i class="fas fa-check-circle white"></i>
+          </div>
+        </div>
+      </a>
+      <a href="#" class="elements">
+        <div class="description">
+          <div class="menu">
+            <div class="text">
+              <h4>Foie gras de canard mi-cuit</h4>
+              <p>Et ses copeaux de truffe noire</p>
+            </div>
+            <div class="tarifs">
+             <p>35€</p>
+            </div>
+          </div>
+          <div class="validate">
+            <i class="fas fa-check-circle fa-spin white"></i>
+          </div>
+        </div>
+      </a>
+      <a href="#" class="elements"> 
+        <div class="description">
+          <div class="menu">
+            <div class="text">
+              <h4>Oeuf au plat</h4>
+              <p>Assaisonné à la truffe sur lit de chaussettes</p>
+            </div>
+            <div class="tarifs">
+             <p>20€</p>
+            </div>
+          </div>
+          <div class="validate">
+            <i class="fas fa-check-circle white"></i>
+          </div>
+        </div>
+      </a>
+  </div>
 
 
+
+
+
+
+CSSSSSSSSSS
 
 
 
@@ -217,21 +220,46 @@
   color:#ffffff;
 }
 
+a:link { 
+    text-decoration:none; 
+    color:#303030;
+} 
+
+a:visited{
+    color:#303030;
+}
+
+
+@keyframes animationElements{
+  
+  0%{
+    opacity:0%;
+  }
+  
+  100%{
+    opacity:100%
+  }
+  
+}
+
+
 .liste {
   display: flex;
   flex-direction: column;
   align-items: center;
+  animation:animationElements 1000ms 150ms;
 }
 
 .elements {
-  width: 300px;
-  height: 50px;
+  width:300px;
+  height:50px;
   border-radius: 4vmin 4vmin 4vmin 4vmin;
   box-shadow: 1px 0.5px 5px rgb(156, 156, 156);
   background-color: #ffffff;
   margin: 7px;
   line-height: 0em;
   overflow:hidden;
+  
   &:hover{
     .validate{
      transform:scaleX(1);
@@ -239,35 +267,31 @@
   } 
 }
   
-.text{
+.menu{
   padding: 5px;
-  text-overflow: ellipsis;
 }
 
-
-
- .validate{
-    position:relative;
-    background-color:#99E2D0;
-    width:55px;
-    height:60px;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    transition: transform 1000ms cubic-bezier(.32,0,.07,1); 
-    transform-origin:100%;
-    transform:scaleX(0);
-    
-  }
-
 .description {
+  position:relative;
   display: flex;
   justify-content: space-between;
+  z-index:2;
+}
+
+.text{
+  position:absolute;
+  width:280px;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+  z-index:1;
 }
 
 .tarifs {
-  padding-top: 33px;
-  padding-left:50px;
+  position:absolute;
+  z-index:1;
+  padding-top:30px;
+  padding-left:250px;
   font-weight: bold;
   color: #303030;
 }
@@ -283,6 +307,25 @@ p {
   margin-top: 3px;
   margin-left: 5px;
 }
+
+ .validate{
+    position:relative;
+    z-index:3;
+    background-color:#99E2D0;
+    width:55px;
+    height:60px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    transition: transform 1000ms cubic-bezier(.32,0,.07,1); 
+    transform-origin:100%;
+    transform:scaleX(0);
+    
+  }
+
+
+
+
 
 
 -->
