@@ -105,17 +105,28 @@ body{
     display:flex;
     flex-direction:column;
     align-items:center;
+    animation:animationElements 500ms linear 150ms;
+    animation-fill-mode:both;
+    animation-delay:.2s;
 }
+
+.progress a:nth-child(2){
+    animation-delay:1.5s;
+  }
+
+.progress a:nth-child(3){
+    animation-delay:3s;
+  }
 
 @keyframes animationElements{
   
     0%{
-      opacity:0%;
+      opacity:0;
       transform: translateY(9px);
     }
-    
+
     100%{
-      opacity:100%;
+        opacity:1;
       transform: translateX(0);
     }
     
@@ -137,7 +148,7 @@ body{
     margin: 7px;
     line-height: 0em;
     overflow:hidden;
-    animation:animationElements 500ms 150ms;
+    
     &:hover{
       .validate{
        transform:scaleX(1);
