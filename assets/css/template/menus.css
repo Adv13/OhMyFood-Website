@@ -108,41 +108,83 @@
   margin-right: 280px;
 }
 
-.text {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  font-size: 0.8em;
+.position h4, p {
+  width: 240px;
+  margin-left: 10px;
 }
 
-.position h4, p {
-  margin-left: 10px;
+.position h4 {
+  margin-top: 10px;
 }
 
 .position p {
   color: #6b6b6b;
+  margin-top: -10px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.text {
+  width: 250px;
+  height: 50px;
+  font-size: 0.8em;
+}
+
+.tarifs {
+  width: 30px;
+  height: 50px;
+  padding-top: 40px;
+  padding-right: 15px;
+}
+
+.text-overflow-ellipsis {
+  text-overflow: ellipsis;
+}
+
+.validate {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #99E2D0;
+  color: #ffffff;
+  border-radius: 0vmin 2vmin 2vmin 0vmin;
+  width: 55px;
+  height: 60px;
+  margin-left: 40px;
 }
 
 .elements {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   width: 300px;
   height: 60px;
-  border-radius: 4vmin 4vmin 4vmin 4vmin;
+  border-radius: 2vmin 2vmin 2vmin 2vmin;
   -webkit-box-shadow: 1px 0.5px 5px #9c9c9c;
           box-shadow: 1px 0.5px 5px #9c9c9c;
   background-color: #ffffff;
-  margin: 7px;
-  line-height: 0em;
   overflow: hidden;
+  margin: 7px;
+}
+
+.elements:hover .validate {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
+.elements:hover .rotate {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  -webkit-transition: -webkit-transform 700ms ease-in-out;
+  transition: -webkit-transform 700ms ease-in-out;
+  transition: transform 700ms ease-in-out;
+  transition: transform 700ms ease-in-out, -webkit-transform 700ms ease-in-out;
 }
 
 /*********************** SECTION MENUS ********************/

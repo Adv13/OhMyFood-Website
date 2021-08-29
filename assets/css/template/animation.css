@@ -1,11 +1,26 @@
 @-webkit-keyframes animationElements {
   0% {
-    opacity: 0%;
+    opacity: 0;
     -webkit-transform: translateY(9px);
             transform: translateY(9px);
   }
+  25% {
+    opacity: 0;
+    -webkit-transform: translateY(9px);
+            transform: translateY(9px);
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  75% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
   100% {
-    opacity: 100%;
+    opacity: 1;
     -webkit-transform: translateX(0);
             transform: translateX(0);
   }
@@ -13,80 +28,74 @@
 
 @keyframes animationElements {
   0% {
-    opacity: 0%;
+    opacity: 0;
     -webkit-transform: translateY(9px);
             transform: translateY(9px);
   }
+  25% {
+    opacity: 0;
+    -webkit-transform: translateY(9px);
+            transform: translateY(9px);
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  75% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
   100% {
-    opacity: 100%;
+    opacity: 1;
     -webkit-transform: translateX(0);
             transform: translateX(0);
   }
 }
 
-.elements {
-  -webkit-animation: animationElements 500ms ease-in-out 150ms;
-          animation: animationElements 500ms ease-in-out 150ms;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
-}
-
-.elements:hover .validate {
-  -webkit-transform: scaleX(1);
-          transform: scaleX(1);
-}
-
-.elements:hover .rotate {
-  -webkit-transform: rotate(360deg);
-          transform: rotate(360deg);
-  -webkit-transition: -webkit-transform 700ms ease-in-out;
-  transition: -webkit-transform 700ms ease-in-out;
-  transition: transform 700ms ease-in-out;
-  transition: transform 700ms ease-in-out, -webkit-transform 700ms ease-in-out;
-}
-
 .elements01 {
-  -webkit-animation: animationElements 1500ms 150ms;
-          animation: animationElements 1500ms 150ms;
+  -webkit-animation: animationElements 2500ms -850ms;
+          animation: animationElements 2500ms -850ms;
 }
 
 .elements02 {
-  -webkit-animation: animationElements 1500ms 250ms;
-          animation: animationElements 1500ms 250ms;
+  -webkit-animation: animationElements 2500ms -750ms;
+          animation: animationElements 2500ms -750ms;
 }
 
 .elements03 {
-  -webkit-animation: animationElements 1500ms 350ms;
-          animation: animationElements 1500ms 350ms;
+  -webkit-animation: animationElements 2500ms -650ms;
+          animation: animationElements 2500ms -650ms;
 }
 
 .elements04 {
-  -webkit-animation: animationElements 1500ms 450ms;
-          animation: animationElements 1500ms 450ms;
+  -webkit-animation: animationElements 2500ms -550ms;
+          animation: animationElements 2500ms -550ms;
 }
 
 .elements05 {
-  -webkit-animation: animationElements 1500ms 550ms;
-          animation: animationElements 1500ms 550ms;
+  -webkit-animation: animationElements 2500ms -450ms;
+          animation: animationElements 2500ms -450ms;
 }
 
 .elements06 {
-  -webkit-animation: animationElements 1500ms 650ms;
-          animation: animationElements 1500ms 650ms;
+  -webkit-animation: animationElements 2500ms -350ms;
+          animation: animationElements 2500ms -350ms;
 }
 
 .elements07 {
-  -webkit-animation: animationElements 1500ms 750ms;
-          animation: animationElements 1500ms 750ms;
+  -webkit-animation: animationElements 2500ms -250ms;
+          animation: animationElements 2500ms -250ms;
 }
 
 .elements08 {
-  -webkit-animation: animationElements 1500ms 850ms;
-          animation: animationElements 1500ms 850ms;
+  -webkit-animation: animationElements 2500ms -150ms;
+          animation: animationElements 2500ms -150ms;
 }
 
 .elements09 {
-  -webkit-animation: animationElements 1500ms 950ms;
-          animation: animationElements 1500ms 950ms;
+  -webkit-animation: animationElements 2500ms -50ms;
+          animation: animationElements 2500ms -50ms;
 }
 /*# sourceMappingURL=animation.css.map */

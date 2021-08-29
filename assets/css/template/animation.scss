@@ -1,62 +1,64 @@
 @keyframes animationElements{
   
     0%{
-        opacity:0%;
-        transform: translateY(9px);
-      }
-     
-      100%{
-        opacity:100%;
-        transform: translateX(0);
-      }
-  }
+      opacity:0;
+      transform: translateY(9px);
+    }
 
-  .elements {
-    animation:animationElements 500ms ease-in-out 150ms;
-    animation-fill-mode:both; 
-    &:hover{
-      .validate{
-       transform:scaleX(1);
-      }
-      .rotate{
-       transform: rotate(360deg);
-       transition: transform 700ms ease-in-out;
-      }
-    } 
+    25%{
+      opacity:0;
+      transform: translateY(9px);
+    }
+      
+    50%{
+      opacity:1;
+      transform: translateY(0);
+    }
+
+    75% {
+      opacity:1;
+      transform: translateY(0);
+    }
+
+     
+    100%{
+      opacity:1;
+      transform: translateX(0);
+    }
   }
 
   .elements01{
-    animation:animationElements 1500ms 150ms;
+    animation:animationElements 2500ms -850ms;
   }
   
   .elements02{
-    animation:animationElements 1500ms 250ms;
+    animation:animationElements 2500ms -750ms;
   }
   
   .elements03{
-    animation:animationElements 1500ms 350ms;
+    animation:animationElements 2500ms -650ms;
   }
 
   .elements04{
-    animation:animationElements 1500ms 450ms;
+    animation:animationElements 2500ms -550ms;
   }
   
   .elements05{
-    animation:animationElements 1500ms 550ms;
+    animation:animationElements 2500ms -450ms;
   }
   
   .elements06{
-    animation:animationElements 1500ms 650ms;
+    animation:animationElements 2500ms -350ms;
   }
     
   .elements07{
-    animation:animationElements 1500ms 750ms;
+    animation:animationElements 2500ms -250ms;
   }
   
   .elements08{
-    animation:animationElements 1500ms 850ms;
+    animation:animationElements 2500ms -150ms;
   }
   
   .elements09{
-    animation:animationElements 1500ms 950ms;
+    animation:animationElements 2500ms -50ms;
   }

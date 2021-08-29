@@ -132,7 +132,6 @@ footer i {
           flex-direction: column;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  /************* probleme****/
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -305,6 +304,17 @@ footer i {
 /************************************************************************/
 /* Large devices (desktops, less than 1600px)*/
 @media (min-width: 892px) and (max-width: 1599.98px) {
+  .allfilters {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
   .responsive_update {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -325,6 +335,17 @@ footer i {
 /* X-Large devices (large desktops, less than 2400px)*/
 @media (min-width: 1600px) and (max-width: 2399.98px) {
   /********************************************************************/
+  .allfilters {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
   .responsive_update {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -450,41 +471,83 @@ footer i {
   margin-right: 280px;
 }
 
-.text {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  font-size: 0.8em;
+.position h4, p {
+  width: 240px;
+  margin-left: 10px;
 }
 
-.position h4, p {
-  margin-left: 10px;
+.position h4 {
+  margin-top: 10px;
 }
 
 .position p {
   color: #6b6b6b;
+  margin-top: -10px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.text {
+  width: 250px;
+  height: 50px;
+  font-size: 0.8em;
+}
+
+.tarifs {
+  width: 30px;
+  height: 50px;
+  padding-top: 40px;
+  padding-right: 15px;
+}
+
+.text-overflow-ellipsis {
+  text-overflow: ellipsis;
+}
+
+.validate {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #99E2D0;
+  color: #ffffff;
+  border-radius: 0vmin 2vmin 2vmin 0vmin;
+  width: 55px;
+  height: 60px;
+  margin-left: 40px;
 }
 
 .elements {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   width: 300px;
   height: 60px;
-  border-radius: 4vmin 4vmin 4vmin 4vmin;
+  border-radius: 2vmin 2vmin 2vmin 2vmin;
   -webkit-box-shadow: 1px 0.5px 5px #9c9c9c;
           box-shadow: 1px 0.5px 5px #9c9c9c;
   background-color: #ffffff;
-  margin: 7px;
-  line-height: 0em;
   overflow: hidden;
+  margin: 7px;
+}
+
+.elements:hover .validate {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
+.elements:hover .rotate {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  -webkit-transition: -webkit-transform 700ms ease-in-out;
+  transition: -webkit-transform 700ms ease-in-out;
+  transition: transform 700ms ease-in-out;
+  transition: transform 700ms ease-in-out, -webkit-transform 700ms ease-in-out;
 }
 
 /*********************** SECTION MENUS ********************/
@@ -544,12 +607,27 @@ footer i {
 
 @-webkit-keyframes animationElements {
   0% {
-    opacity: 0%;
+    opacity: 0;
     -webkit-transform: translateY(9px);
             transform: translateY(9px);
   }
+  25% {
+    opacity: 0;
+    -webkit-transform: translateY(9px);
+            transform: translateY(9px);
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  75% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
   100% {
-    opacity: 100%;
+    opacity: 1;
     -webkit-transform: translateX(0);
             transform: translateX(0);
   }
@@ -557,80 +635,74 @@ footer i {
 
 @keyframes animationElements {
   0% {
-    opacity: 0%;
+    opacity: 0;
     -webkit-transform: translateY(9px);
             transform: translateY(9px);
   }
+  25% {
+    opacity: 0;
+    -webkit-transform: translateY(9px);
+            transform: translateY(9px);
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  75% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
   100% {
-    opacity: 100%;
+    opacity: 1;
     -webkit-transform: translateX(0);
             transform: translateX(0);
   }
 }
 
-.elements {
-  -webkit-animation: animationElements 500ms ease-in-out 150ms;
-          animation: animationElements 500ms ease-in-out 150ms;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
-}
-
-.elements:hover .validate {
-  -webkit-transform: scaleX(1);
-          transform: scaleX(1);
-}
-
-.elements:hover .rotate {
-  -webkit-transform: rotate(360deg);
-          transform: rotate(360deg);
-  -webkit-transition: -webkit-transform 700ms ease-in-out;
-  transition: -webkit-transform 700ms ease-in-out;
-  transition: transform 700ms ease-in-out;
-  transition: transform 700ms ease-in-out, -webkit-transform 700ms ease-in-out;
-}
-
 .elements01 {
-  -webkit-animation: animationElements 1500ms 150ms;
-          animation: animationElements 1500ms 150ms;
+  -webkit-animation: animationElements 2500ms -850ms;
+          animation: animationElements 2500ms -850ms;
 }
 
 .elements02 {
-  -webkit-animation: animationElements 1500ms 250ms;
-          animation: animationElements 1500ms 250ms;
+  -webkit-animation: animationElements 2500ms -750ms;
+          animation: animationElements 2500ms -750ms;
 }
 
 .elements03 {
-  -webkit-animation: animationElements 1500ms 350ms;
-          animation: animationElements 1500ms 350ms;
+  -webkit-animation: animationElements 2500ms -650ms;
+          animation: animationElements 2500ms -650ms;
 }
 
 .elements04 {
-  -webkit-animation: animationElements 1500ms 450ms;
-          animation: animationElements 1500ms 450ms;
+  -webkit-animation: animationElements 2500ms -550ms;
+          animation: animationElements 2500ms -550ms;
 }
 
 .elements05 {
-  -webkit-animation: animationElements 1500ms 550ms;
-          animation: animationElements 1500ms 550ms;
+  -webkit-animation: animationElements 2500ms -450ms;
+          animation: animationElements 2500ms -450ms;
 }
 
 .elements06 {
-  -webkit-animation: animationElements 1500ms 650ms;
-          animation: animationElements 1500ms 650ms;
+  -webkit-animation: animationElements 2500ms -350ms;
+          animation: animationElements 2500ms -350ms;
 }
 
 .elements07 {
-  -webkit-animation: animationElements 1500ms 750ms;
-          animation: animationElements 1500ms 750ms;
+  -webkit-animation: animationElements 2500ms -250ms;
+          animation: animationElements 2500ms -250ms;
 }
 
 .elements08 {
-  -webkit-animation: animationElements 1500ms 850ms;
-          animation: animationElements 1500ms 850ms;
+  -webkit-animation: animationElements 2500ms -150ms;
+          animation: animationElements 2500ms -150ms;
 }
 
 .elements09 {
-  -webkit-animation: animationElements 1500ms 950ms;
-          animation: animationElements 1500ms 950ms;
+  -webkit-animation: animationElements 2500ms -50ms;
+          animation: animationElements 2500ms -50ms;
 }
 /*# sourceMappingURL=styles.css.map */
