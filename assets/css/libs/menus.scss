@@ -1,0 +1,200 @@
+@import 'variable.scss';
+/******************** HEADER UPDATE *******************/
+
+.header__update{
+    display:flex;
+    align-items:center;
+}
+
+.retour{
+    margin-left:30px;
+}
+
+.logoFont02{
+    font-family:'Shrikhand', sans-serif;
+    padding-right:50px;
+}
+
+
+/****************************** MENUS ******************************/
+
+/************************** MENUS IMAGES **************************/
+
+.img_menu{
+    position: relative;
+    width:100%;
+    height:250px;
+    z-index:1;
+    overflow:hidden;
+}
+
+.img_menu img{
+    width:100%;
+    height:250px;
+    overflow:hidden;
+    object-fit:cover;
+}
+
+.desc_menu{
+    position:relative;
+    top:-70px;
+    bottom:200px;
+    width:100%;
+    z-index:2;
+    border-radius:10vmin 10vmin 0vmin 0vmin;
+    background-color:$ThirdBackgroundColor;
+    
+}
+
+/********************* MENUS RESTAURANT *****************/
+
+.mainMenus{
+    background-color:$ThirdBackgroundColor;
+}
+
+.titleMenus{
+    display:flex;
+    justify-content: space-between;
+    width:320px;
+    height:40px;
+    margin:20px;
+    padding:10px;
+}
+
+.titleMenus i{
+    padding-top:25px;
+    padding-right:20px;
+    color:$FourthColor;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #303030;
+    &:hover{
+        -webkit-text-stroke-color:$PrimaryColor;
+        color:$PrimaryColor;
+    }
+}
+
+.positionGnl{
+    display:flex;
+    flex-direction: column;
+}
+
+.position{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+}
+
+.position h5{
+    display:flex;
+    align-items:center;
+    width:40px;
+    height:25px;
+    border:solid;
+    border-color:$ThirdColor;
+    color:$BasicColor;
+    border-top:none;
+    border-left:none;
+    border-right:none;
+    margin-left:20px;
+    margin-top:30px;
+    margin-right:280px;
+}
+
+.text p, h4{
+    width:210px;
+    margin-left:10px;
+}
+
+.text h4{
+    margin-top:10px;
+}
+
+.position p{
+    color:$BasicColor;
+    margin-top:-10px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.text{
+    width:220px;
+    height:50px;
+    font-size:0.8em;
+}
+
+.text-overflow-ellipsis{
+    text-overflow: ellipsis;
+}
+
+.tarifs{
+   width:50px;
+   height:50px;
+   padding-top:40px;
+   padding-right:15px;
+}
+
+.check{
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    float: right;
+}
+
+.choix_checkbox{
+    position: absolute;
+    left: -9999px;
+}
+
+.validate{
+    background-color:$ThirdColor;
+    width:55px;
+    height:60px;
+    color:$FourthColor;
+    text-align:center;
+    margin-left:40px;
+    padding-left:20px;
+    padding-right:30px;
+}
+
+.validate i{
+    font-weight: 900;
+    color: $FourthColor;
+    margin-top:20px;
+}
+
+.elements {
+    display:flex;
+    width:300px;
+    height:60px;
+    border-radius: 2vmin 2vmin 2vmin 2vmin;
+    box-shadow: 1px 0.5px 5px rgb(156, 156, 156);
+    background-color: $FourthColor;
+    overflow: hidden;
+    cursor: pointer;
+    margin: 7px;
+}
+
+
+/*********************** SECTION MENUS ********************/
+
+.sectionMenus{
+    background-color:$ThirdBackgroundColor;
+    text-align:center;
+    padding-top:50px;
+    padding-bottom:50px;
+}
+
+.sectionMenus input{
+    width:200px;
+    height:50px;
+    background: linear-gradient($SecondaryColor, $PrimaryColor);
+    border-radius:6vmin 6vmin 6vmin 6vmin;
+    box-shadow: 1px 0.5px 5px rgb(156, 156, 156);
+    color:$FourthColor;
+    font-weight: bold;
+    margin-top:20px;
+    border:none;
+    &:hover{
+        background:darken($PrimaryColor, 10);
+    }
+}

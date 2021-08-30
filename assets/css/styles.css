@@ -1,8 +1,10 @@
+@charset "UTF-8";
 /********* BODY INDEX ********/
 body {
   font-family: 'roboto', sans-serif;
   color: #303030;
   margin: 0 auto;
+  max-width: 1950px;
 }
 
 a:link {
@@ -35,6 +37,7 @@ img {
 header {
   -webkit-box-shadow: 1px 0.5px 5px #9c9c9c;
           box-shadow: 1px 0.5px 5px #9c9c9c;
+  /* à optimiser pour ecrans +1600*/
 }
 
 h1 {
@@ -45,13 +48,13 @@ h1 {
 
 /********************** FOOTER *************************/
 footer {
-  /*background-color: $FourthBackgroundColor;*/
   background-color: #353535;
+  /*background-color:#353535;*/
 }
 
 .footer__links {
-  /*color:$FourthColor;*/
   color: #ffffff;
+  /*color:#ffffff;*/
   padding: 15px;
 }
 
@@ -76,21 +79,21 @@ footer i {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  /*background-color:$SecondaryBackgroundColor;*/
   background-color: #eaeaea;
+  /*background-color:#eaeaea;*/
   text-align: center;
 }
 
 .location i {
   width: 30px;
   height: 30px;
-  margin-top: 20px;
+  margin-top: 15px;
 }
 
 /************************* SUBHEAD ***************************/
 .subhead {
+  /*background-color:#f6f6f6;*/
   background-color: #f6f6f6;
-  /*background-color:$ThirdBackgroundColor;*/
   text-align: center;
   padding: 40px;
 }
@@ -98,9 +101,9 @@ footer i {
 .subhead input {
   width: 200px;
   height: 50px;
+  /*background: linear-gradient(#FF79DA, #9356DC);*/
   background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
   background: linear-gradient(#FF79DA, #9356DC);
-  /*background: linear-gradient($SecondaryColor, $PrimaryColor);*/
   border-radius: 6vmin 6vmin 6vmin 6vmin;
   -webkit-box-shadow: 1px 0.5px 5px #9c9c9c;
           box-shadow: 1px 0.5px 5px #9c9c9c;
@@ -108,6 +111,10 @@ footer i {
   font-weight: bold;
   margin-top: 20px;
   border: none;
+}
+
+.subhead input:hover {
+  background: #782cd3;
 }
 
 /************************* MAIN ***********************/
@@ -153,6 +160,13 @@ footer i {
           box-shadow: 1px 5px 10px #d8d8d8;
   border-radius: 6vmin 6vmin 6vmin 6vmin;
   border: none;
+  /*&:hover + .number{
+        background:lighten($SecondaryColor, 10);
+    }*/
+}
+
+.filters:hover {
+  background: #fface8;
 }
 
 .filters h5 {
@@ -229,6 +243,24 @@ footer i {
 
 .results i {
   padding: 15px;
+  color: #ffffff;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #303030;
+}
+
+.results i:hover {
+  -webkit-text-stroke-color: #9356DC;
+  color: #9356DC;
+}
+
+.results i:focus {
+  -webkit-text-stroke-color: #9356DC;
+  color: #9356DC;
+}
+
+.results i:active {
+  -webkit-text-stroke-color: #9356DC;
+  color: #9356DC;
 }
 
 .results h4, p {
@@ -243,122 +275,16 @@ footer i {
 
 .results h6 {
   background-color: #99E2D0;
-  color: #139273;
+  color: #1b6150;
   width: 45px;
-  height: 5px;
   padding: 10px;
   margin-left: 65px;
   margin-top: 15px;
 }
 
-/************************************************************************/
-/************************************************************************/
-/************************************************************************/
-/***************************** MEDIAS QUERIES ***************************/
-/************************************************************************/
-/************************************************************************/
-/************************************************************************/
-/************************************************************************/
-/************************************************************************/
-/************************************************************************/
-/************************************************************************/
-/* Small devices (landscape phones, less than 768px)*/
-@media (min-width: 400px) and (max-width: 767.98px) {
-  /********************************************************************/
-  .responsive_update {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-  }
-}
-
-/************************************************************************/
-/************************************************************************/
-/* Medium devices (tablets, less than 892px)*/
-@media (min-width: 768px) and (max-width: 891.98px) {
-  /********************************************************************/
-  .responsive_update {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-  }
-}
-
-/************************************************************************/
-/************************************************************************/
-/* Large devices (desktops, less than 1600px)*/
-@media (min-width: 892px) and (max-width: 1599.98px) {
-  .allfilters {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  .responsive_update {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-  }
-}
-
-/************************************************************************/
-/************************************************************************/
-/* X-Large devices (large desktops, less than 2400px)*/
-@media (min-width: 1600px) and (max-width: 2399.98px) {
-  /********************************************************************/
-  .allfilters {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  .responsive_update {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-  }
+.results h6:hover {
+  background: #4acbab;
+  color: white;
 }
 
 /******************** HEADER UPDATE *******************/
@@ -420,12 +346,23 @@ footer i {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  width: 320px;
+  height: 40px;
   margin: 20px;
+  padding: 10px;
 }
 
 .titleMenus i {
   padding-top: 25px;
   padding-right: 20px;
+  color: #ffffff;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #303030;
+}
+
+.titleMenus i:hover {
+  -webkit-text-stroke-color: #9356DC;
+  color: #9356DC;
 }
 
 .positionGnl {
@@ -471,15 +408,13 @@ footer i {
   margin-right: 280px;
 }
 
-.text p {
-  width: 240px;
+.text p, h4 {
+  width: 210px;
   margin-left: 10px;
 }
 
 .text h4 {
-  width: 240px;
   margin-top: 10px;
-  margin-left: 10px;
 }
 
 .position p {
@@ -490,38 +425,54 @@ footer i {
 }
 
 .text {
-  width: 250px;
+  width: 220px;
   height: 50px;
   font-size: 0.8em;
-}
-
-.tarifs {
-  width: 30px;
-  height: 50px;
-  padding-top: 40px;
-  padding-right: 15px;
 }
 
 .text-overflow-ellipsis {
   text-overflow: ellipsis;
 }
 
-.validate {
+.tarifs {
+  width: 50px;
+  height: 50px;
+  padding-top: 40px;
+  padding-right: 15px;
+}
+
+.check {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  float: right;
+}
+
+.choix_checkbox {
+  position: absolute;
+  left: -9999px;
+}
+
+.validate {
   background-color: #99E2D0;
-  color: #ffffff;
-  border-radius: 0vmin 2vmin 2vmin 0vmin;
   width: 55px;
   height: 60px;
+  color: #ffffff;
+  text-align: center;
   margin-left: 40px;
+  padding-left: 20px;
+  padding-right: 30px;
+}
+
+.validate i {
+  font-weight: 900;
+  color: #ffffff;
+  margin-top: 20px;
 }
 
 .elements {
@@ -535,21 +486,8 @@ footer i {
           box-shadow: 1px 0.5px 5px #9c9c9c;
   background-color: #ffffff;
   overflow: hidden;
+  cursor: pointer;
   margin: 7px;
-}
-
-.elements:hover .validate {
-  -webkit-transform: scaleX(1);
-          transform: scaleX(1);
-}
-
-.elements:hover .rotate {
-  -webkit-transform: rotate(360deg);
-          transform: rotate(360deg);
-  -webkit-transition: -webkit-transform 700ms ease-in-out;
-  transition: -webkit-transform 700ms ease-in-out;
-  transition: transform 700ms ease-in-out;
-  transition: transform 700ms ease-in-out, -webkit-transform 700ms ease-in-out;
 }
 
 /*********************** SECTION MENUS ********************/
@@ -574,37 +512,8 @@ footer i {
   border: none;
 }
 
-/************************************************************************/
-/************************************************************************/
-/************************************************************************/
-/***************************** MEDIAS QUERIES ***************************/
-/************************************************************************/
-/************************************************************************/
-/************************************************************************/
-/************************************************************************/
-/************************************************************************/
-/************************************************************************/
-/************************************************************************/
-/* Small devices (landscape phones, less than 768px)*/
-@media (min-width: 400px) and (max-width: 767.98px) {
-  /********************************************************************/
-}
-
-/************************************************************************/
-/************************************************************************/
-/* Medium devices (tablets, less than 892px)*/
-@media (min-width: 768px) and (max-width: 891.98px) {
-  /********************************************************************/
-}
-
-/************************************************************************/
-/************************************************************************/
-/* Large devices (desktops, less than 1600px)*/
-/************************************************************************/
-/************************************************************************/
-/* X-Large devices (large desktops, less than 2400px)*/
-@media (min-width: 1600px) and (max-width: 2399.98px) {
-  /********************************************************************/
+.sectionMenus input:hover {
+  background: #782cd3;
 }
 
 @-webkit-keyframes animationElements {
@@ -706,5 +615,185 @@ footer i {
 .elements09 {
   -webkit-animation: animationElements 2500ms -50ms;
           animation: animationElements 2500ms -50ms;
+}
+
+.elements {
+  -webkit-transition: -webkit-transform 4000ms;
+  transition: -webkit-transform 4000ms;
+  transition: transform 4000ms;
+  transition: transform 4000ms, -webkit-transform 4000ms;
+}
+
+.elements:hover .validate {
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+}
+
+.elements:hover .rotate {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  -webkit-transition: -webkit-transform 700ms ease-in-out;
+  transition: -webkit-transform 700ms ease-in-out;
+  transition: transform 700ms ease-in-out;
+  transition: transform 700ms ease-in-out, -webkit-transform 700ms ease-in-out;
+}
+
+/************************************************************************/
+/************************************************************************/
+/************************************************************************/
+/***************************** MEDIAS QUERIES ***************************/
+/************************************************************************/
+/************************************************************************/
+/************************************************************************/
+/************************************************************************/
+/************************************************************************/
+/************************************************************************/
+/************************************************************************/
+/* Small devices (landscape phones, less than 768px)*/
+@media (min-width: 400px) and (max-width: 767.98px) {
+  /********************************************************************/
+  .responsive_update {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
+/************************************************************************/
+/************************************************************************/
+/* Medium devices (tablets, less than 892px)*/
+@media (min-width: 768px) and (max-width: 891.98px) {
+  /********************************************************************/
+  .responsive_update {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  /********************************************************************/
+  .titleMenus {
+    width: 620px;
+    padding-left: 60px;
+  }
+  .position h5 {
+    margin-right: 570px;
+  }
+  .elements {
+    width: 600px;
+  }
+  .text {
+    width: 550px;
+  }
+  .text p, h4 {
+    width: 540px;
+  }
+}
+
+/************************************************************************/
+/************************************************************************/
+/* Large devices (desktops, less than 1600px)*/
+@media (min-width: 892px) and (max-width: 1599.98px) {
+  .allfilters {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .responsive_update {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  /**********************************************************************/
+  .positionGnl {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .titleMenus {
+    width: 1170px;
+    padding-left: 40px;
+  }
+}
+
+/************************************************************************/
+/************************************************************************/
+/* X-Large devices (large desktops, less than 2400px)*/
+@media (min-width: 1600px) {
+  /********************************************************************/
+  .allfilters {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .responsive_update {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  /********************************************************************/
+  .positionGnl {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .titleMenus {
+    width: 1600px;
+    padding-left: 150px;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

@@ -1,5 +1,7 @@
-@import 'template/variable.scss';
-@import 'template/base.scss';
-@import 'template/main.scss';
-@import 'template/menus.scss';
-@import 'template/animation.scss';
+@import 'libs/variable.scss';
+@import 'libs/base.scss';
+@import 'libs/index.scss';
+@import 'libs/menus.scss';
+@import 'libs/loader.scss';
+@import 'libs/checkAnim.scss';
+@import 'libs/responsive.scss';

@@ -1,0 +1,21 @@
+.elements {
+  -webkit-transition: -webkit-transform 4000ms;
+  transition: -webkit-transform 4000ms;
+  transition: transform 4000ms;
+  transition: transform 4000ms, -webkit-transform 4000ms;
+}
+
+.elements:hover .validate {
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+}
+
+.elements:hover .rotate {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  -webkit-transition: -webkit-transform 700ms ease-in-out;
+  transition: -webkit-transform 700ms ease-in-out;
+  transition: transform 700ms ease-in-out;
+  transition: transform 700ms ease-in-out, -webkit-transform 700ms ease-in-out;
+}
+/*# sourceMappingURL=checkAnim.css.map */

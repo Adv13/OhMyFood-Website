@@ -1,10 +1,10 @@
 @import 'variable.scss';
-
 /********* BODY INDEX ********/
 body{
     font-family: 'roboto', sans-serif;
     color:#303030;
     margin: 0 auto;
+    max-width:1950px;
 }
 
 a:link { 
@@ -36,7 +36,7 @@ img{
 /*********************** HEADER ****************************/
 
 header{
-    box-shadow: 1px 0.5px 5px rgb(156, 156, 156);
+    box-shadow: 1px 0.5px 5px rgb(156, 156, 156); /* à optimiser pour ecrans +1600*/
 }
 
 h1{
@@ -48,13 +48,13 @@ h1{
 /********************** FOOTER *************************/
 
 footer{
-    /*background-color: $FourthBackgroundColor;*/
-    background-color:#353535;
+    background-color: $FourthBackgroundColor;
+    /*background-color:#353535;*/
 }
 
 .footer__links{
-    /*color:$FourthColor;*/
-    color:#ffffff;
+    color:$FourthColor;
+    /*color:#ffffff;*/
     padding:15px;
 }
 

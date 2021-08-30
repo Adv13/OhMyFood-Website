@@ -1,0 +1,216 @@
+/************************ LOCATION *********************/
+.location {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #eaeaea;
+  /*background-color:#eaeaea;*/
+  text-align: center;
+}
+
+.location i {
+  width: 30px;
+  height: 30px;
+  margin-top: 15px;
+}
+
+/************************* SUBHEAD ***************************/
+.subhead {
+  /*background-color:#f6f6f6;*/
+  background-color: #f6f6f6;
+  text-align: center;
+  padding: 40px;
+}
+
+.subhead input {
+  width: 200px;
+  height: 50px;
+  /*background: linear-gradient(#FF79DA, #9356DC);*/
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(#FF79DA, #9356DC);
+  border-radius: 6vmin 6vmin 6vmin 6vmin;
+  -webkit-box-shadow: 1px 0.5px 5px #9c9c9c;
+          box-shadow: 1px 0.5px 5px #9c9c9c;
+  color: #ffffff;
+  font-weight: bold;
+  margin-top: 20px;
+  border: none;
+}
+
+.subhead input:hover {
+  background: #782cd3;
+}
+
+/************************* MAIN ***********************/
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 40px;
+}
+
+.allfilters {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 300px;
+  padding-bottom: 60px;
+}
+
+.filters {
+  width: 300px;
+  height: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #f6f6f6;
+  -webkit-box-shadow: 1px 5px 10px #d8d8d8;
+          box-shadow: 1px 5px 10px #d8d8d8;
+  border-radius: 6vmin 6vmin 6vmin 6vmin;
+  border: none;
+  /*&:hover + .number{
+        background:lighten($SecondaryColor, 10);
+    }*/
+}
+
+.filters:hover {
+  background: #fface8;
+}
+
+.filters h5 {
+  position: relative;
+  width: 15px;
+  height: 15px;
+  background-color: #9356DC;
+  color: #ffffff;
+  border-radius: 50%;
+  padding: 5px;
+  margin-left: -10px;
+  margin-right: 10px;
+  text-align: center;
+}
+
+.filters i {
+  padding: 20px;
+}
+
+/************************* SECTION **********************/
+.section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-color: #f6f6f6;
+  /*background-color:$ThirdBackgroundColor;*/
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.results {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 320px;
+  height: 250px;
+  border-radius: 3vmin 3vmin 3vmin 3vmin;
+  -webkit-box-shadow: 1px 0.5px 5px #9c9c9c;
+          box-shadow: 1px 0.5px 5px #9c9c9c;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  line-height: 0em;
+  overflow: hidden;
+}
+
+.results img {
+  width: 320px;
+  height: 170px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.infos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 30px;
+}
+
+.results i {
+  padding: 15px;
+  color: #ffffff;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #303030;
+}
+
+.results i:hover {
+  -webkit-text-stroke-color: #9356DC;
+  color: #9356DC;
+}
+
+.results i:focus {
+  -webkit-text-stroke-color: #9356DC;
+  color: #9356DC;
+}
+
+.results i:active {
+  -webkit-text-stroke-color: #9356DC;
+  color: #9356DC;
+}
+
+.results h4, p {
+  margin-left: 10px;
+}
+
+.news {
+  position: absolute;
+  padding-left: 180px;
+  padding-top: 10px;
+}
+
+.results h6 {
+  background-color: #99E2D0;
+  color: #1b6150;
+  width: 45px;
+  padding: 10px;
+  margin-left: 65px;
+  margin-top: 15px;
+}
+
+.results h6:hover {
+  background: #4acbab;
+  color: white;
+}
+/*# sourceMappingURL=index.css.map */
