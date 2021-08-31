@@ -172,25 +172,26 @@
 .tarifs{
    width:50px;
    height:50px;
-   padding-top:40px;
-   padding-right:15px;
+   padding-top:70px;
+   padding-left:30px;
+   padding-right:5px;
 }
 
 .prixAnim{
     display:flex;
-    flex-wrap:wrap;
-    flex-direction: row;
-    margin-left:20px;
+    align-items: center;
+    background-color: white;
+    float: right;
 }
 
 .validate{
     background-color:$ThirdColor;
-    width:55px;
+    width:45px;
     height:60px;
     color:$FourthColor;
     text-align:center;
-    margin-left:40px;
-    padding-left:20px;
+    margin-left:10px;
+    padding-left:10px;
     padding-right:30px;
 }
 
@@ -219,27 +220,25 @@
   }
 
 .position label:before {
-content:'✓';
-border:solid;
-border-radius:50%;
-padding: 0 0.15em;
+    content:'✓';
+    border:solid;
+    border-radius:50%;
+    padding: 0 0.15em;
 
 }
 .position input:checked + label {
-color:$PrimaryColor;
-    .elements{
-        background:lighten($SecondaryColor, 10);
-    }
+    color:$PrimaryColor;
+    
 }
 .position input:checked + label:before {
-content:'✓';
-background-color:$ThirdColor;
+    content:'✓';
+    background-color:$ThirdColor;
 }
 
 /* hide checkbox '✗'*/
 .position [type="checkbox"] {
-  position:fixed;
-  left:-9999px;
+    position:fixed;
+    left:-9999px;
 }
 
 /*********************** SECTION MENUS ********************/

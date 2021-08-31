@@ -483,31 +483,30 @@ footer i {
 .tarifs {
   width: 50px;
   height: 50px;
-  padding-top: 40px;
-  padding-right: 15px;
+  padding-top: 70px;
+  padding-left: 30px;
+  padding-right: 5px;
 }
 
 .prixAnim {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  margin-left: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: white;
+  float: right;
 }
 
 .validate {
   background-color: #99E2D0;
-  width: 55px;
+  width: 45px;
   height: 60px;
   color: #ffffff;
   text-align: center;
-  margin-left: 40px;
-  padding-left: 20px;
+  margin-left: 10px;
+  padding-left: 10px;
   padding-right: 30px;
 }
 
@@ -548,10 +547,6 @@ footer i {
 
 .position input:checked + label {
   color: #9356DC;
-}
-
-.position input:checked + label .elements {
-  background: #fface8;
 }
 
 .position input:checked + label:before {
@@ -692,6 +687,13 @@ footer i {
           animation: animationElements 2500ms -50ms;
 }
 
+.elements:hover .tarifs {
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
 .elements:hover .validate {
   -webkit-transform: translateX(-100%);
           transform: translateX(-100%);
@@ -708,6 +710,87 @@ footer i {
   transition: transform 700ms ease-in-out, -webkit-transform 700ms ease-in-out;
 }
 
+.elements .validate .choix_check:checked + .choix {
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.elements .validate .choix_check + .choix {
+  -webkit-transform: translate(100%, 0);
+          transform: translate(100%, 0);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.elements .validate .choix_check:checked + .choix + .text {
+  -webkit-animation: ellipsis;
+          animation: ellipsis;
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+@-webkit-keyframes ellipsis {
+  from {
+    white-space: nowrap;
+  }
+  to {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+@keyframes ellipsis {
+  from {
+    white-space: nowrap;
+  }
+  to {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+/***************************************************************/
+/*-----effet à la sélection d'une assiette
+.plat .choix_check:checked + .choix + .plat_content .animation{
+  transform: translate(5%, 0);
+  transition: 0.5s;
+  i{
+      transform: rotate(0deg);
+      transition: 1.5s;
+  }
+}
+.plat .choix_check + .choix + .plat_content .animation{
+  transform: translate(60%, 0);
+  transition: 0.5s;
+  i{
+      transform: rotate(360deg);
+      transition: 1.5s;
+  }
+}
+.plat .choix_check:checked + .choix + .plat_content .choix_content{
+  .choix_description, .choix_title{
+      animation: ellipsis;
+      animation-delay: 0.3s;
+      animation-fill-mode: both;
+      
+  }
+  @keyframes ellipsis{
+      from{
+          white-space: nowrap; 
+      }
+      to{
+          white-space: nowrap; 
+          overflow: hidden;
+          text-overflow: ellipsis;
+      }
+  }
+}-----*/
 /************************************************************************/
 /************************************************************************/
 /************************************************************************/

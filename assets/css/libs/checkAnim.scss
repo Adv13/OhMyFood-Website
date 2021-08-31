@@ -1,5 +1,9 @@
 .elements{
     &:hover{
+        .tarifs {
+          transform:translateX(-100%);
+          transition: 0.5s;
+        }
         .validate{
          transform:translateX(-100%);
          transition: 0.5s;
@@ -9,4 +13,69 @@
          transition: transform 700ms ease-in-out;
         }
       }
+
+      .validate .choix_check:checked + .choix{
+        transform:translateX(-100%);
+        transition: 0.5s;
+      }
+
+      .validate .choix_check + .choix{
+        transform: translate(100%, 0);
+        transition: 0.5s;
+      }
+
+      .validate .choix_check:checked + .choix + .text{
+      animation: ellipsis;
+      animation-delay: 0.3s;
+      animation-fill-mode: both;
+      }
+
 }
+
+@keyframes ellipsis{
+  from{
+      white-space: nowrap; 
+  }
+  to{
+      white-space: nowrap; 
+      overflow: hidden;
+      text-overflow: ellipsis;
+  }
+  }
+
+/***************************************************************/
+/*-----effet à la sélection d'une assiette
+.plat .choix_check:checked + .choix + .plat_content .animation{
+  transform: translate(5%, 0);
+  transition: 0.5s;
+  i{
+      transform: rotate(0deg);
+      transition: 1.5s;
+  }
+}
+.plat .choix_check + .choix + .plat_content .animation{
+  transform: translate(60%, 0);
+  transition: 0.5s;
+  i{
+      transform: rotate(360deg);
+      transition: 1.5s;
+  }
+}
+.plat .choix_check:checked + .choix + .plat_content .choix_content{
+  .choix_description, .choix_title{
+      animation: ellipsis;
+      animation-delay: 0.3s;
+      animation-fill-mode: both;
+      
+  }
+  @keyframes ellipsis{
+      from{
+          white-space: nowrap; 
+      }
+      to{
+          white-space: nowrap; 
+          overflow: hidden;
+          text-overflow: ellipsis;
+      }
+  }
+}-----*/
