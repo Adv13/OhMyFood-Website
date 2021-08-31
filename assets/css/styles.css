@@ -442,20 +442,57 @@ footer i {
   padding-right: 15px;
 }
 
-.check {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+input {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+.checkedcolor {
+  color: #9356DC;
+}
+
+/********************* checkbox menu ***************/
+label {
+  display: inline-block;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  float: right;
+  width: 20px;
+  height: 20px;
+  background-color: #ffffff;
+  border-radius: 90%;
+  color: #99E2D0;
+  margin-top: 20px;
+  cursor: pointer;
 }
 
-.choix_checkbox {
-  position: absolute;
+label:before {
+  content: '✓';
+  border: solid;
+  border-radius: 50%;
+  padding: 0 0.15em;
+}
+
+input:checked + label {
+  color: #9356DC;
+}
+
+input:checked + label .elements {
+  background: #fface8;
+}
+
+input:checked + label:before {
+  content: '✓';
+  background-color: #99E2D0;
+}
+
+/* hide checkbox '✗'*/
+[type="checkbox"] {
+  position: fixed;
   left: -9999px;
 }
 
@@ -487,7 +524,6 @@ footer i {
           box-shadow: 1px 0.5px 5px #9c9c9c;
   background-color: #ffffff;
   overflow: hidden;
-  cursor: pointer;
   margin: 7px;
 }
 

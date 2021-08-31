@@ -134,16 +134,51 @@
    padding-right:15px;
 }
 
-.check{
-    display:flex;
-    flex-wrap: wrap;
-    align-items: center;
-    float: right;
+input{
+    width:20px;
+    height:20px;
+    border-radius:50%;
 }
 
-.choix_checkbox{
-    position: absolute;
-    left: -9999px;
+.checkedcolor{
+    color:$PrimaryColor;
+}
+
+/********************* checkbox menu ***************/
+label {
+    display:inline-block;
+    justify-content:center;
+    align-items:center;
+    width:20px;
+    height:20px;
+    background-color:$FourthColor;
+    border-radius:90%;
+    color:$ThirdColor;
+    margin-top:20px;
+    cursor: pointer;
+  }
+
+label:before {
+content:'✓';
+border:solid;
+border-radius:50%;
+padding: 0 0.15em;
+
+}
+input:checked + label {
+color:$PrimaryColor;
+    .elements{
+        background:lighten($SecondaryColor, 10);
+    }
+}
+input:checked + label:before {
+content:'✓';
+background-color:$ThirdColor;
+}
+  /* hide checkbox '✗'*/
+[type="checkbox"] {
+  position:fixed;
+  left:-9999px;
 }
 
 .validate{
@@ -171,7 +206,6 @@
     box-shadow: 1px 0.5px 5px rgb(156, 156, 156);
     background-color: $FourthColor;
     overflow: hidden;
-    cursor: pointer;
     margin: 7px;
 }
 
