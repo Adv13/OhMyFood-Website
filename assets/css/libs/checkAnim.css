@@ -22,14 +22,14 @@
   transition: transform 700ms ease-in-out, -webkit-transform 700ms ease-in-out;
 }
 
-.elements .validate .choix_check:checked + .choix {
+.elements .elements .validate .choix_check:checked + .choix {
   -webkit-transform: translateX(-100%);
           transform: translateX(-100%);
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 
-.elements .validate .choix_check + .choix {
+.elements .elements .validate .choix_check + .choix {
   -webkit-transform: translate(100%, 0);
           transform: translate(100%, 0);
   -webkit-transition: 0.5s;
@@ -37,6 +37,43 @@
 }
 
 .elements .validate .choix_check:checked + .choix + .text {
+  -webkit-animation: ellipsis;
+          animation: ellipsis;
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+.elements .choix_check:checked + .choix + .plat_content .prixAnim {
+  -webkit-transform: translate(5%, 0);
+          transform: translate(5%, 0);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.elements .choix_check:checked + .choix + .plat_content .prixAnim i {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
+}
+
+.elements .choix_check + .choix + .plat_content .animation {
+  -webkit-transform: translate(60%, 0);
+          transform: translate(60%, 0);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.elements .choix_check + .choix + .plat_content .animation i {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
+}
+
+.elements .choix_check:checked + .choix + .plat_content .text {
   -webkit-animation: ellipsis;
           animation: ellipsis;
   -webkit-animation-delay: 0.3s;
