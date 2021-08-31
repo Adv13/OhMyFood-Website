@@ -55,15 +55,16 @@
 .titleMenus{
     display:flex;
     justify-content: space-between;
-    width:320px;
+    width:95%;
     height:40px;
-    margin:20px;
+    margin-top:20px;
+    margin-left:20px;
     padding:10px;
 }
 
 .titleMenus i{
     padding-top:25px;
-    padding-right:20px;
+    margin-right:50px;
     color:$FourthColor;
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: #303030;

@@ -46,10 +46,11 @@
         justify-content: space-around;
   }
   /********************************************************************/
-  .titleMenus {
-    width: 620px;
-    padding-left: 60px;
-  }
+  /*
+        .titleMenus{
+            width:620px;
+            padding-left:60px;
+        }*/
   .position h5 {
     margin-right: 570px;
   }
@@ -104,10 +105,11 @@
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
-  .titleMenus {
-    width: 1170px;
-    padding-left: 40px;
-  }
+  /*
+        .titleMenus{
+            width:1170px;
+            padding-left:40px;
+        }*/
 }
 
 /************************************************************************/
@@ -151,9 +153,10 @@
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
-  .titleMenus {
-    width: 1600px;
-    padding-left: 150px;
-  }
+  /*
+        .titleMenus{
+            width:1600px;
+            padding-left:150px;
+        }*/
 }
 /*# sourceMappingURL=responsive.css.map */

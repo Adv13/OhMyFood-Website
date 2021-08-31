@@ -346,15 +346,16 @@ footer i {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 320px;
+  width: 95%;
   height: 40px;
-  margin: 20px;
+  margin-top: 20px;
+  margin-left: 20px;
   padding: 10px;
 }
 
 .titleMenus i {
   padding-top: 25px;
-  padding-right: 20px;
+  margin-right: 50px;
   color: #ffffff;
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: #303030;
@@ -686,10 +687,11 @@ footer i {
         justify-content: space-around;
   }
   /********************************************************************/
-  .titleMenus {
-    width: 620px;
-    padding-left: 60px;
-  }
+  /*
+        .titleMenus{
+            width:620px;
+            padding-left:60px;
+        }*/
   .position h5 {
     margin-right: 570px;
   }
@@ -744,10 +746,11 @@ footer i {
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
-  .titleMenus {
-    width: 1170px;
-    padding-left: 40px;
-  }
+  /*
+        .titleMenus{
+            width:1170px;
+            padding-left:40px;
+        }*/
 }
 
 /************************************************************************/
@@ -791,9 +794,10 @@ footer i {
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
-  .titleMenus {
-    width: 1600px;
-    padding-left: 150px;
-  }
+  /*
+        .titleMenus{
+            width:1600px;
+            padding-left:150px;
+        }*/
 }
 /*# sourceMappingURL=styles.css.map */
