@@ -52,17 +52,19 @@
     background-color:$ThirdBackgroundColor;
 }
 
-.titleMenus{
+.titleRestaurant{
     display:flex;
     justify-content: space-between;
-    width:95%;
+    width:90%;
     height:40px;
     margin-top:20px;
     margin-left:20px;
     padding:10px;
 }
 
-.titleMenus i{
+
+/*
+.titleRestaurant i{
     padding-top:25px;
     margin-right:50px;
     color:$FourthColor;
@@ -71,6 +73,35 @@
     &:hover{
         -webkit-text-stroke-color:$PrimaryColor;
         color:$PrimaryColor;
+    }
+}*/
+
+
+.btn_like{
+    font-size: 20px;
+    margin-right:20px;
+    margin-top:20px;
+    .like{
+        display: none;
+    }
+
+    .like + label::before{
+        cursor: pointer;
+        font-family: "Font Awesome 5 Free";
+        content: ("\f004");
+        font-weight: 400;
+        font-size: 20px;
+        background:$ThirdBackgroundColor;
+    }
+
+    .like:checked + label::before{
+        font-family: "Font Awesome 5 free";
+        content: ("\f004");
+        font-weight: 900;
+        color: transparent; 
+        background:$PrimaryColor;
+        -webkit-background-clip: text;
+        transition-duration: 0.5s;
     }
 }
 
@@ -145,7 +176,7 @@ input{
 }
 
 /********************* checkbox menu ***************/
-label {
+.position label {
     display:inline-block;
     justify-content:center;
     align-items:center;
@@ -158,25 +189,26 @@ label {
     cursor: pointer;
   }
 
-label:before {
+.position label:before {
 content:'✓';
 border:solid;
 border-radius:50%;
 padding: 0 0.15em;
 
 }
-input:checked + label {
+.position input:checked + label {
 color:$PrimaryColor;
     .elements{
         background:lighten($SecondaryColor, 10);
     }
 }
-input:checked + label:before {
+.position input:checked + label:before {
 content:'✓';
 background-color:$ThirdColor;
 }
-  /* hide checkbox '✗'*/
-[type="checkbox"] {
+
+/* hide checkbox '✗'*/
+.position [type="checkbox"] {
   position:fixed;
   left:-9999px;
 }

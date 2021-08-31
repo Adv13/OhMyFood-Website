@@ -46,11 +46,6 @@
         justify-content: space-around;
   }
   /********************************************************************/
-  /*
-        .titleMenus{
-            width:620px;
-            padding-left:60px;
-        }*/
   .position h5 {
     margin-right: 570px;
   }
@@ -105,11 +100,9 @@
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
-  /*
-        .titleMenus{
-            width:1170px;
-            padding-left:40px;
-        }*/
+  .titleRestaurant {
+    width: 95%;
+  }
 }
 
 /************************************************************************/
@@ -154,7 +147,7 @@
         justify-content: space-around;
   }
   /*
-        .titleMenus{
+        .titleRestaurant{
             width:1600px;
             padding-left:150px;
         }*/

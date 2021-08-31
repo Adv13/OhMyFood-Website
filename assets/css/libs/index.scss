@@ -131,12 +131,16 @@
     height:30px;
 }
 
+.likeMenus{
+    padding-left:20px;
+}
+/*
 .results i{
     padding:15px;
     color:$FourthColor;
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: #303030;
-    &:hover{
+   &:hover{
         -webkit-text-stroke-color:$PrimaryColor;
         color:$PrimaryColor;
     }
@@ -148,7 +152,7 @@
         -webkit-text-stroke-color: $PrimaryColor;
         color:$PrimaryColor;
     }
-}
+}*/
 
 .results h4, p{
     margin-left:10px;

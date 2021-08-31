@@ -241,28 +241,29 @@ footer i {
   height: 30px;
 }
 
-.results i {
-  padding: 15px;
-  color: #ffffff;
-  -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: #303030;
+.likeMenus {
+  padding-left: 20px;
 }
 
-.results i:hover {
-  -webkit-text-stroke-color: #9356DC;
-  color: #9356DC;
-}
-
-.results i:focus {
-  -webkit-text-stroke-color: #9356DC;
-  color: #9356DC;
-}
-
-.results i:active {
-  -webkit-text-stroke-color: #9356DC;
-  color: #9356DC;
-}
-
+/*
+.results i{
+    padding:15px;
+    color:$FourthColor;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #303030;
+   &:hover{
+        -webkit-text-stroke-color:$PrimaryColor;
+        color:$PrimaryColor;
+    }
+    &:focus{
+        -webkit-text-stroke-color: $PrimaryColor;
+        color:$PrimaryColor;
+    }
+    &:active{
+        -webkit-text-stroke-color: $PrimaryColor;
+        color:$PrimaryColor;
+    }
+}*/
 .results h4, p {
   margin-left: 10px;
 }
@@ -339,31 +340,60 @@ footer i {
   background-color: #f6f6f6;
 }
 
-.titleMenus {
+.titleRestaurant {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 95%;
+  width: 90%;
   height: 40px;
   margin-top: 20px;
   margin-left: 20px;
   padding: 10px;
 }
 
-.titleMenus i {
-  padding-top: 25px;
-  margin-right: 50px;
-  color: #ffffff;
-  -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: #303030;
+/*
+.titleRestaurant i{
+    padding-top:25px;
+    margin-right:50px;
+    color:$FourthColor;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #303030;
+    &:hover{
+        -webkit-text-stroke-color:$PrimaryColor;
+        color:$PrimaryColor;
+    }
+}*/
+.btn_like {
+  font-size: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
 }
 
-.titleMenus i:hover {
-  -webkit-text-stroke-color: #9356DC;
-  color: #9356DC;
+.btn_like .like {
+  display: none;
+}
+
+.btn_like .like + label::before {
+  cursor: pointer;
+  font-family: "Font Awesome 5 Free";
+  content: "";
+  font-weight: 400;
+  font-size: 20px;
+  background: #f6f6f6;
+}
+
+.btn_like .like:checked + label::before {
+  font-family: "Font Awesome 5 free";
+  content: "";
+  font-weight: 900;
+  color: transparent;
+  background: #9356DC;
+  -webkit-background-clip: text;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
 }
 
 .positionGnl {
@@ -453,7 +483,7 @@ input {
 }
 
 /********************* checkbox menu ***************/
-label {
+.position label {
   display: inline-block;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -470,28 +500,28 @@ label {
   cursor: pointer;
 }
 
-label:before {
+.position label:before {
   content: '✓';
   border: solid;
   border-radius: 50%;
   padding: 0 0.15em;
 }
 
-input:checked + label {
+.position input:checked + label {
   color: #9356DC;
 }
 
-input:checked + label .elements {
+.position input:checked + label .elements {
   background: #fface8;
 }
 
-input:checked + label:before {
+.position input:checked + label:before {
   content: '✓';
   background-color: #99E2D0;
 }
 
 /* hide checkbox '✗'*/
-[type="checkbox"] {
+.position [type="checkbox"] {
   position: fixed;
   left: -9999px;
 }
@@ -723,11 +753,6 @@ input:checked + label:before {
         justify-content: space-around;
   }
   /********************************************************************/
-  /*
-        .titleMenus{
-            width:620px;
-            padding-left:60px;
-        }*/
   .position h5 {
     margin-right: 570px;
   }
@@ -782,11 +807,9 @@ input:checked + label:before {
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
-  /*
-        .titleMenus{
-            width:1170px;
-            padding-left:40px;
-        }*/
+  .titleRestaurant {
+    width: 95%;
+  }
 }
 
 /************************************************************************/
@@ -831,7 +854,7 @@ input:checked + label:before {
         justify-content: space-around;
   }
   /*
-        .titleMenus{
+        .titleRestaurant{
             width:1600px;
             padding-left:150px;
         }*/
