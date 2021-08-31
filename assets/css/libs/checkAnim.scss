@@ -3,6 +3,7 @@
     &:hover{
         .validate{
          transform:translateX(-100%);
+         transition: 0.5s;
         }
         .rotate{
          transform: rotate(360deg);

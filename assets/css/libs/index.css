@@ -42,6 +42,7 @@
 
 .subhead input:hover {
   background: #782cd3;
+  cursor: pointer;
 }
 
 /************************* MAIN ***********************/

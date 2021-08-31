@@ -115,6 +115,7 @@ footer i {
 
 .subhead input:hover {
   background: #782cd3;
+  cursor: pointer;
 }
 
 /************************* MAIN ***********************/
@@ -455,6 +456,20 @@ footer i {
   overflow: hidden;
 }
 
+.elements {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 300px;
+  height: 60px;
+  border-radius: 2vmin 2vmin 2vmin 2vmin;
+  -webkit-box-shadow: 1px 0.5px 5px #9c9c9c;
+          box-shadow: 1px 0.5px 5px #9c9c9c;
+  background-color: #ffffff;
+  overflow: hidden;
+  margin: 7px;
+}
+
 .text {
   width: 220px;
   height: 50px;
@@ -472,17 +487,40 @@ footer i {
   padding-right: 15px;
 }
 
-input {
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
+.prixAnim {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.validate {
+  background-color: #99E2D0;
+  width: 55px;
+  height: 60px;
+  color: #ffffff;
+  text-align: center;
+  margin-left: 40px;
+  padding-left: 20px;
+  padding-right: 30px;
+}
+
+.validate i {
+  font-weight: 900;
+  color: #ffffff;
+  margin-top: 20px;
 }
 
 .checkedcolor {
   color: #9356DC;
 }
 
-/********************* checkbox menu ***************/
+/********************* check animation menu ***************/
 .position label {
   display: inline-block;
   -webkit-box-pack: center;
@@ -524,37 +562,6 @@ input {
 .position [type="checkbox"] {
   position: fixed;
   left: -9999px;
-}
-
-.validate {
-  background-color: #99E2D0;
-  width: 55px;
-  height: 60px;
-  color: #ffffff;
-  text-align: center;
-  margin-left: 40px;
-  padding-left: 20px;
-  padding-right: 30px;
-}
-
-.validate i {
-  font-weight: 900;
-  color: #ffffff;
-  margin-top: 20px;
-}
-
-.elements {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 300px;
-  height: 60px;
-  border-radius: 2vmin 2vmin 2vmin 2vmin;
-  -webkit-box-shadow: 1px 0.5px 5px #9c9c9c;
-          box-shadow: 1px 0.5px 5px #9c9c9c;
-  background-color: #ffffff;
-  overflow: hidden;
-  margin: 7px;
 }
 
 /*********************** SECTION MENUS ********************/
@@ -694,6 +701,8 @@ input {
 .elements:hover .validate {
   -webkit-transform: translateX(-100%);
           transform: translateX(-100%);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .elements:hover .rotate {

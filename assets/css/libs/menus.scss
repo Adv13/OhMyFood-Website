@@ -148,6 +148,17 @@
     overflow: hidden;
 }
 
+.elements {
+    display:flex;
+    width:300px;
+    height:60px;
+    border-radius: 2vmin 2vmin 2vmin 2vmin;
+    box-shadow: 1px 0.5px 5px rgb(156, 156, 156);
+    background-color: $FourthColor;
+    overflow: hidden;
+    margin: 7px;
+}
+
 .text{
     width:220px;
     height:50px;
@@ -165,17 +176,34 @@
    padding-right:15px;
 }
 
-input{
-    width:20px;
-    height:20px;
-    border-radius:50%;
+.prixAnim{
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction: row;
+}
+
+.validate{
+    background-color:$ThirdColor;
+    width:55px;
+    height:60px;
+    color:$FourthColor;
+    text-align:center;
+    margin-left:40px;
+    padding-left:20px;
+    padding-right:30px;
+}
+
+.validate i{
+    font-weight: 900;
+    color: $FourthColor;
+    margin-top:20px;
 }
 
 .checkedcolor{
     color:$PrimaryColor;
 }
 
-/********************* checkbox menu ***************/
+/********************* check animation menu ***************/
 .position label {
     display:inline-block;
     justify-content:center;
@@ -212,35 +240,6 @@ background-color:$ThirdColor;
   position:fixed;
   left:-9999px;
 }
-
-.validate{
-    background-color:$ThirdColor;
-    width:55px;
-    height:60px;
-    color:$FourthColor;
-    text-align:center;
-    margin-left:40px;
-    padding-left:20px;
-    padding-right:30px;
-}
-
-.validate i{
-    font-weight: 900;
-    color: $FourthColor;
-    margin-top:20px;
-}
-
-.elements {
-    display:flex;
-    width:300px;
-    height:60px;
-    border-radius: 2vmin 2vmin 2vmin 2vmin;
-    box-shadow: 1px 0.5px 5px rgb(156, 156, 156);
-    background-color: $FourthColor;
-    overflow: hidden;
-    margin: 7px;
-}
-
 
 /*********************** SECTION MENUS ********************/
 

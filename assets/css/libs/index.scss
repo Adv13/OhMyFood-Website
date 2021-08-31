@@ -38,6 +38,7 @@
     border:none;
     &:hover{
         background:darken($PrimaryColor, 10);
+        cursor: pointer;
     }
 }
 
