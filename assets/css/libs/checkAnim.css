@@ -1,10 +1,3 @@
-.elements {
-  -webkit-transition: -webkit-transform 4000ms;
-  transition: -webkit-transform 4000ms;
-  transition: transform 4000ms;
-  transition: transform 4000ms, -webkit-transform 4000ms;
-}
-
 .elements:hover .validate {
   -webkit-transform: translateX(-100%);
           transform: translateX(-100%);

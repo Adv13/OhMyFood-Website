@@ -497,6 +497,7 @@ footer i {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  margin-left: 20px;
 }
 
 .validate {
@@ -689,13 +690,6 @@ footer i {
 .elements09 {
   -webkit-animation: animationElements 2500ms -50ms;
           animation: animationElements 2500ms -50ms;
-}
-
-.elements {
-  -webkit-transition: -webkit-transform 4000ms;
-  transition: -webkit-transform 4000ms;
-  transition: transform 4000ms;
-  transition: transform 4000ms, -webkit-transform 4000ms;
 }
 
 .elements:hover .validate {

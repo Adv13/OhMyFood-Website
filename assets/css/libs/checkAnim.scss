@@ -1,5 +1,4 @@
 .elements{
-    transition: transform 4000ms;
     &:hover{
         .validate{
          transform:translateX(-100%);
