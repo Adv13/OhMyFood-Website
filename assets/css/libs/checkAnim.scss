@@ -1,4 +1,4 @@
-.elements{
+/*.elements{
     &:hover{
         .text {
           
@@ -27,48 +27,15 @@
         transition: 0.5s;
       }
 
-      .validate .choix_check:checked + .choix + .text{
+      .validate .choix_check:checked + .choix + .Text{
       animation: ellipsis;
       animation-delay: 0.3s;
       animation-fill-mode: both;
       }
 
-}
+}*/
 
-  .elements .choix_check:checked + .choix + .plat_content .prixAnim{
-    transform: translate(5%, 0);
-    transition: 0.5s;
-    i{
-      transform: rotate(0deg);
-      transition: 1.5s;
-    }
-  }
-
-  .elements .choix_check + .choix + .plat_content .animation{
-    transform: translate(60%, 0);
-    transition: 0.5s;
-    i{
-      transform: rotate(360deg);
-      transition: 1.5s;
-    }
-  }
-
- .elements .choix_check:checked + .choix + .plat_content .text{
-    animation: ellipsis;
-    animation-delay: 0.3s;
-    animation-fill-mode: both;
- }
-
- @keyframes ellipsis{
-  from{
-      white-space: nowrap; 
-  }
-  to{
-      white-space: nowrap; 
-      overflow: hidden;
-      text-overflow: ellipsis;
-  }
-  }
+ 
 
 /***************************************************************/
 /*-----effet à la sélection d'une assiette

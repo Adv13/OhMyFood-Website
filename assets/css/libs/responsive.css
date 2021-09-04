@@ -25,6 +25,25 @@
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
+  .Text {
+    width: 80%;
+  }
+  .choix_description {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .elements .choix_check + .choix + .plat_content .Animation {
+    -webkit-transform: translate(60%, 0);
+            transform: translate(60%, 0);
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    position: absolute;
+    margin-left: 62%;
+  }
+  .elements .choix_check:checked + .choix + .plat_content .choix_content {
+    width: 60%;
+  }
 }
 
 /************************************************************************/
@@ -49,14 +68,23 @@
   .position h5 {
     margin-right: 570px;
   }
-  .elements {
-    width: 600px;
+  .categories {
+    width: 50%;
   }
-  .text {
-    width: 550px;
+  .categories_choix {
+    margin-left: 10px;
   }
-  .text p, h4 {
-    width: 540px;
+  .elements .plat_content {
+    width: 45%;
+  }
+  .Text {
+    width: 60%;
+  }
+  .tarifs {
+    padding-right: 10px;
+  }
+  .Check {
+    margin-left: 15px;
   }
 }
 
@@ -64,6 +92,7 @@
 /************************************************************************/
 /* Large devices (desktops, less than 1600px)*/
 @media (min-width: 892px) and (max-width: 1599.98px) {
+  /**********************************************************************/
   .allfilters {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -88,7 +117,6 @@
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
-  /**********************************************************************/
   .positionGnl {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -102,6 +130,24 @@
   }
   .titleRestaurant {
     width: 95%;
+  }
+  .Text {
+    width: 45%;
+  }
+  .Check {
+    height: 62px;
+  }
+  .categories {
+    width: 25%;
+  }
+  .elements .plat_content {
+    width: 25%;
+  }
+  .elements .choix_check + .choix + .plat_content .Animation {
+    margin-left: 204px;
+  }
+  .elements .choix_check:checked + .choix + .plat_content .Animation {
+    width: 25%;
   }
 }
 
@@ -146,10 +192,19 @@
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
+  .categories {
+    width: 20%;
+  }
+  .elements .plat_content {
+    width: 20%;
+  }
+  .elements .choix_check + .choix + .plat_content .Animation {
+    margin-left: 268px;
+  }
   /*
-        .titleRestaurant{
-            width:1600px;
-            padding-left:150px;
-        }*/
+    .titleRestaurant{
+        width:1600px;
+        padding-left:150px;
+    }*/
 }
 /*# sourceMappingURL=responsive.css.map */

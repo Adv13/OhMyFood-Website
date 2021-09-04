@@ -76,6 +76,7 @@
     }
 }*/
 
+/********************** Checkbox coeur *************/
 
 .btn_like{
     font-size: 20px;
@@ -105,15 +106,20 @@
     }
 }
 
+/************************************/
+
+
 .positionGnl{
     display:flex;
     flex-direction: column;
+    padding: 0 20px 0 20px;
 }
 
 .position{
     display:flex;
     flex-direction: column;
     align-items:center;
+    padding: 0 10px 0 10px;
 }
 
 .position h5{
@@ -132,74 +138,95 @@
     margin-right:280px;
 }
 
-.text p, h4{
-    width:210px;
-    margin-left:10px;
-}
+   /* margin-top:-10px;
+    white-space: nowrap;
+    overflow: hidden;
 
 .text h4{
     margin-top:10px;
 }
+.text p, h4{
+    width:210px;
+    margin-left:10px;
+}*/
 
-.position p{
-    color:$BasicColor;
-    margin-top:-10px;
+.categories_choix{
+    width:360px;
+    cursor: pointer;
+    margin-left:60px;
+}
+
+.choix_title, .choix_description{
+    margin: 0;
+}
+
+.choix_description{
+    margin-top:5px;
+}
+
+.Text{
+    width: 80%;
+    margin: 10px;
     white-space: nowrap;
+    overflow: visible;
+    font-size:0.9em;
+}
+
+/*.prixAnim{
+    display:flex;
+    align-items: center;
+    background-color: white;
+    float: right;
+}*/
+
+.tarifs{
+    height: 30px;
+    font-weight: bold;
+    margin-left: -1px;
+    margin-top:14px;
+    margin-bottom:10px;
+    padding-right:5px;
+}
+
+.Check{ /*check*/
+    background-color:$ThirdColor;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    line-height: 58px;
+    margin-left: 5px;
+}
+
+.choix_check{
+    display: none;
+}
+
+.choix{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    height: 58px;
+    border-radius: 20px;
+    background-color: #fff;
+    margin-bottom: 15px;
     overflow: hidden;
+    cursor: pointer;
+    z-index: 1;
+    opacity: 0;
 }
 
 .elements {
     display:flex;
-    width:300px;
-    height:60px;
-    border-radius: 2vmin 2vmin 2vmin 2vmin;
-    box-shadow: 1px 0.5px 5px rgb(156, 156, 156);
-    background-color: $FourthColor;
-    overflow: hidden;
-    margin: 7px;
-}
-
-.plat_content{
-    
-}
-
-.text{
-    width:220px;
-    height:50px;
-    font-size:0.8em;
+    flex-wrap:wrap;
+    background-color: $ThirdBackgroundColor;
 }
 
 .text-overflow-ellipsis{
     text-overflow: ellipsis;
 }
 
-.tarifs{
-   width:50px;
-   height:50px;
-   padding-top:70px;
-   padding-left:30px;
-   padding-right:5px;
-}
-
-.prixAnim{
-    display:flex;
-    align-items: center;
-    background-color: white;
-    float: right;
-}
-
-.validate{
-    background-color:$ThirdColor;
-    width:45px;
-    height:60px;
-    color:$FourthColor;
-    text-align:center;
-    margin-left:10px;
-    padding-left:10px;
-    padding-right:30px;
-}
-
-.validate i{
+/*.validate i{
     font-weight: 900;
     color: $FourthColor;
     margin-top:20px;
@@ -207,10 +234,84 @@
 
 .checkedcolor{
     color:$PrimaryColor;
+}*/
+
+.Animation{
+    display: flex;
+    align-items: center;
+    background-color: $PrimaryBackgroundColor;
+    float: right;
+    padding: 0 0.15em;
+
+    i{
+        font-weight: 900;
+        color: $FourthColor;
+        padding: 0 0.15em;
+    }
+}
+
+/*************** animation choix du plat ***********/
+
+.elements .choix_check:checked + .choix + .plat_content .Animation{
+    transform: translate(5%, 0);
+    transition: 0.5s;
+    width: 60%;
+    i{
+      transform: rotate(0deg);
+      transition: 1.5s;
+    }
+  }
+
+  .elements .choix_check + .choix + .plat_content .Animation{
+    transform: translate(60%, 0);
+    transition: 0.5s;
+    position: absolute;
+    margin-left: 62%;
+    i{
+      transform: rotate(-360deg);
+      transition: transform 500ms ease-in-out;
+    }
+  }
+
+ .elements .choix_check:checked + .choix + .plat_content .Text{
+    animation: ellipsis;
+    animation-delay: 0.3s;
+    animation-fill-mode: both;
+ }
+
+    @keyframes ellipsis{
+    from{
+        white-space: nowrap; 
+    }
+    to{
+        white-space: nowrap; 
+        overflow:hidden;
+        text-overflow:ellipsis;
+    }
+}
+
+
+.elements .plat_content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 85%;
+    margin-right: 10px;
+    height: 58px;
+    border-radius: 20px;
+    background-color: #fff;
+    border-radius: 2vmin 2vmin 2vmin 2vmin;
+    box-shadow: 1px 0.5px 5px rgb(156, 156, 156);
+    margin-bottom: 15px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    position: absolute;
+
 }
 
 /********************* check animation menu ***************/
-.position label {
+/*.position label {
     display:inline-block;
     justify-content:center;
     align-items:center;
@@ -241,10 +342,6 @@
 }
 
 /* hide checkbox '✗'*/
-.position [type="checkbox"] {
-    position:fixed;
-    left:-9999px;
-}
 
 /*********************** SECTION MENUS ********************/
 
