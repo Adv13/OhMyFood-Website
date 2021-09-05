@@ -282,7 +282,7 @@ body {
   border-radius: 2vmin 2vmin 2vmin 2vmin;
   -webkit-box-shadow: 1px 0.5px 5px #9c9c9c;
           box-shadow: 1px 0.5px 5px #9c9c9c;
-  background-color: #fff;
+  background-color: #ffffff;
   margin-bottom: 15px;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -308,16 +308,16 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: white;
+  background-color: #ffffff;
   float: right;
 }
 
 .animation i {
-  font-weight: 900;
-  color: white;
+  color: #ffffff;
+  padding: 0 0.15em;
 }
 
-/*-----effet à la sélection d'une assiette-----*/
+/******* Effets lors de la sélection d'un plat ******/
 .plat .choix_check:checked + .choix + .plat_content .animation {
   -webkit-transform: translate(5%, 0);
           transform: translate(5%, 0);
@@ -393,45 +393,13 @@ body {
   border-radius: 2vmin 2vmin 2vmin 2vmin;
   -webkit-box-shadow: 1px 0.5px 5px #9c9c9c;
           box-shadow: 1px 0.5px 5px #9c9c9c;
-  background-color: #fff;
+  background-color: #ffffff;
   margin-bottom: 15px;
   overflow: hidden;
   text-overflow: ellipsis;
   position: absolute;
 }
 
-/********************* check animation menu ***************/
-/*.position label {
-    display:inline-block;
-    justify-content:center;
-    align-items:center;
-    width:20px;
-    height:20px;
-    background-color:$FourthColor;
-    border-radius:90%;
-    color:$ThirdColor;
-    margin-top:20px;
-    cursor: pointer;
-    position: absolute;
-  }
-
-.position label:before {
-    content:'✓';
-    border:solid;
-    border-radius:50%;
-    padding: 0 0.15em;
-
-}
-.position input:checked + label {
-    color:$PrimaryColor;
-
-}
-.position input:checked + label:before {
-    content:'✓';
-    background-color:$ThirdColor;
-}
-
-/* hide checkbox '✗'*/
 /*********************** SECTION MENUS ********************/
 .section_commander {
   background-color: #f6f6f6;

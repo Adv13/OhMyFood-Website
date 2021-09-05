@@ -28,11 +28,6 @@ a:visited {
   margin-left: 20px;
 }
 
-img {
-  width: 50px;
-  height: 50px;
-}
-
 /*********************** HEADER ****************************/
 header {
   -webkit-box-shadow: 1px 0.5px 5px #9c9c9c;
@@ -246,25 +241,6 @@ footer i {
   padding-left: 20px;
 }
 
-/*
-.results i{
-    padding:15px;
-    color:$FourthColor;
-    -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: #303030;
-   &:hover{
-        -webkit-text-stroke-color:$PrimaryColor;
-        color:$PrimaryColor;
-    }
-    &:focus{
-        -webkit-text-stroke-color: $PrimaryColor;
-        color:$PrimaryColor;
-    }
-    &:active{
-        -webkit-text-stroke-color: $PrimaryColor;
-        color:$PrimaryColor;
-    }
-}*/
 .results h4, p {
   margin-left: 10px;
 }
@@ -289,9 +265,9 @@ footer i {
   color: white;
 }
 
-.elements {
-  -webkit-animation: animationElements 500ms ease-in-out 150ms;
-          animation: animationElements 500ms ease-in-out 150ms;
+.plat {
+  -webkit-animation: animationElements 500ms ease-in-out;
+          animation: animationElements 500ms ease-in-out;
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
 }
@@ -316,6 +292,19 @@ footer i {
           animation: animationElements 2s;
 }
 
+/*
+.element01{     
+  animation: animationElements 2500ms 850ms;
+}
+.element02{
+  animation: animationElements 2500ms 750ms;
+}
+.element03{
+  animation: animationElements 2500ms 650ms;
+}
+.element04{
+  animation: animationElements 2500ms -550ms;
+}*/
 @-webkit-keyframes animationElements {
   0% {
     opacity: 0;
@@ -343,7 +332,6 @@ footer i {
             transform: translateY(0);
   }
 }
-
 @keyframes animationElements {
   0% {
     opacity: 0;
@@ -572,7 +560,7 @@ body {
   border-radius: 2vmin 2vmin 2vmin 2vmin;
   -webkit-box-shadow: 1px 0.5px 5px #9c9c9c;
           box-shadow: 1px 0.5px 5px #9c9c9c;
-  background-color: #fff;
+  background-color: #ffffff;
   margin-bottom: 15px;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -598,16 +586,16 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: white;
+  background-color: #ffffff;
   float: right;
 }
 
 .animation i {
-  font-weight: 900;
-  color: white;
+  color: #ffffff;
+  padding: 0 0.15em;
 }
 
-/*-----effet à la sélection d'une assiette-----*/
+/******* Effets lors de la sélection d'un plat ******/
 .plat .choix_check:checked + .choix + .plat_content .animation {
   -webkit-transform: translate(5%, 0);
           transform: translate(5%, 0);
@@ -683,45 +671,13 @@ body {
   border-radius: 2vmin 2vmin 2vmin 2vmin;
   -webkit-box-shadow: 1px 0.5px 5px #9c9c9c;
           box-shadow: 1px 0.5px 5px #9c9c9c;
-  background-color: #fff;
+  background-color: #ffffff;
   margin-bottom: 15px;
   overflow: hidden;
   text-overflow: ellipsis;
   position: absolute;
 }
 
-/********************* check animation menu ***************/
-/*.position label {
-    display:inline-block;
-    justify-content:center;
-    align-items:center;
-    width:20px;
-    height:20px;
-    background-color:$FourthColor;
-    border-radius:90%;
-    color:$ThirdColor;
-    margin-top:20px;
-    cursor: pointer;
-    position: absolute;
-  }
-
-.position label:before {
-    content:'✓';
-    border:solid;
-    border-radius:50%;
-    padding: 0 0.15em;
-
-}
-.position input:checked + label {
-    color:$PrimaryColor;
-
-}
-.position input:checked + label:before {
-    content:'✓';
-    background-color:$ThirdColor;
-}
-
-/* hide checkbox '✗'*/
 /*********************** SECTION MENUS ********************/
 .section_commander {
   background-color: #f6f6f6;
@@ -748,9 +704,9 @@ body {
   background: #782cd3;
 }
 
-.elements {
-  -webkit-animation: animationElements 500ms ease-in-out 150ms;
-          animation: animationElements 500ms ease-in-out 150ms;
+.plat {
+  -webkit-animation: animationElements 500ms ease-in-out;
+          animation: animationElements 500ms ease-in-out;
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
 }
@@ -775,6 +731,19 @@ body {
           animation: animationElements 2s;
 }
 
+/*
+.element01{     
+  animation: animationElements 2500ms 850ms;
+}
+.element02{
+  animation: animationElements 2500ms 750ms;
+}
+.element03{
+  animation: animationElements 2500ms 650ms;
+}
+.element04{
+  animation: animationElements 2500ms -550ms;
+}*/
 @keyframes animationElements {
   0% {
     opacity: 0;
@@ -803,78 +772,6 @@ body {
   }
 }
 
-/*.elements{
-    &:hover{
-        .text {
-          
-        }
-        .tarifs {
-          transform:translateX(-100%);
-          transition: 0.5s;
-        }
-        .validate{
-         transform:translateX(-100%);
-         transition: 0.5s;
-        }
-        .rotate{
-         transform: rotate(360deg);
-         transition: transform 700ms ease-in-out;
-        }
-      }
-
-      .elements .validate .choix_check:checked + .choix{
-        transform:translateX(-100%);
-        transition: 0.5s;
-      }
-
-      .elements .validate .choix_check + .choix{
-        transform: translate(100%, 0);
-        transition: 0.5s;
-      }
-
-      .validate .choix_check:checked + .choix + .Text{
-      animation: ellipsis;
-      animation-delay: 0.3s;
-      animation-fill-mode: both;
-      }
-
-}*/
-/***************************************************************/
-/*-----effet à la sélection d'une assiette
-.plat .choix_check:checked + .choix + .plat_content .animation{
-  transform: translate(5%, 0);
-  transition: 0.5s;
-  i{
-      transform: rotate(0deg);
-      transition: 1.5s;
-  }
-}
-.plat .choix_check + .choix + .plat_content .animation{
-  transform: translate(60%, 0);
-  transition: 0.5s;
-  i{
-      transform: rotate(360deg);
-      transition: 1.5s;
-  }
-}
-.plat .choix_check:checked + .choix + .plat_content .choix_content{
-  .choix_description, .choix_title{
-      animation: ellipsis;
-      animation-delay: 0.3s;
-      animation-fill-mode: both;
-      
-  }
-  @keyframes ellipsis{
-      from{
-          white-space: nowrap; 
-      }
-      to{
-          white-space: nowrap; 
-          overflow: hidden;
-          text-overflow: ellipsis;
-      }
-  }
-}-----*/
 /************************************************************************/
 /************************************************************************/
 /************************************************************************/
@@ -957,7 +854,7 @@ body {
   }
   /*************************************************************/
   .btn_like {
-    margin-right: -70px;
+    margin-right: -50px;
   }
   .restaurant_categories {
     display: -webkit-box;
