@@ -1,64 +1,44 @@
-@keyframes animationElements{
-  
-    0%{
-      opacity:0;
-      transform: translateY(9px);
-    }
+.elements{
+  animation: animationElements 500ms ease-in-out 150ms;
+  animation-fill-mode: both;
+}
 
-    25%{
-      opacity:0;
-      transform: translateY(9px);
-    }
-      
-    50%{
-      opacity:1;
-      transform: translateY(0);
-    }
 
-    75% {
-      opacity:1;
-      transform: translateY(0);
-    }
+.element01{     
+  animation: animationElements 0.5s;
+}
+.element02{
+  animation: animationElements 1s;
+}
+.element03{
+  animation: animationElements 1.5s;
+}
+.element04{
+  animation: animationElements 2s;
+}
 
-     
-    100%{
-      opacity:1;
-      transform: translateX(0);
-    }
-  }
 
-  .elements01{
-    animation:animationElements 2500ms -850ms;
-  }
-  
-  .elements02{
-    animation:animationElements 2500ms -750ms;
-  }
-  
-  .elements03{
-    animation:animationElements 2500ms -650ms;
-  }
 
-  .elements04{
-    animation:animationElements 2500ms -550ms;
+@keyframes animationElements {
+  0% {
+    opacity: 0;
+    transform: translateY(9px);
+  }
+  25% {
+    opacity: 0;
+    transform: translateY(9px);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  75% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
   
-  .elements05{
-    animation:animationElements 2500ms -450ms;
-  }
-  
-  .elements06{
-    animation:animationElements 2500ms -350ms;
-  }
-    
-  .elements07{
-    animation:animationElements 2500ms -250ms;
-  }
-  
-  .elements08{
-    animation:animationElements 2500ms -150ms;
-  }
-  
-  .elements09{
-    animation:animationElements 2500ms -50ms;
-  }
+}

@@ -1,3 +1,30 @@
+.elements {
+  -webkit-animation: animationElements 500ms ease-in-out 150ms;
+          animation: animationElements 500ms ease-in-out 150ms;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+.element01 {
+  -webkit-animation: animationElements 0.5s;
+          animation: animationElements 0.5s;
+}
+
+.element02 {
+  -webkit-animation: animationElements 1s;
+          animation: animationElements 1s;
+}
+
+.element03 {
+  -webkit-animation: animationElements 1.5s;
+          animation: animationElements 1.5s;
+}
+
+.element04 {
+  -webkit-animation: animationElements 2s;
+          animation: animationElements 2s;
+}
+
 @-webkit-keyframes animationElements {
   0% {
     opacity: 0;
@@ -21,8 +48,8 @@
   }
   100% {
     opacity: 1;
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
 
@@ -49,53 +76,8 @@
   }
   100% {
     opacity: 1;
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
-}
-
-.elements01 {
-  -webkit-animation: animationElements 2500ms -850ms;
-          animation: animationElements 2500ms -850ms;
-}
-
-.elements02 {
-  -webkit-animation: animationElements 2500ms -750ms;
-          animation: animationElements 2500ms -750ms;
-}
-
-.elements03 {
-  -webkit-animation: animationElements 2500ms -650ms;
-          animation: animationElements 2500ms -650ms;
-}
-
-.elements04 {
-  -webkit-animation: animationElements 2500ms -550ms;
-          animation: animationElements 2500ms -550ms;
-}
-
-.elements05 {
-  -webkit-animation: animationElements 2500ms -450ms;
-          animation: animationElements 2500ms -450ms;
-}
-
-.elements06 {
-  -webkit-animation: animationElements 2500ms -350ms;
-          animation: animationElements 2500ms -350ms;
-}
-
-.elements07 {
-  -webkit-animation: animationElements 2500ms -250ms;
-          animation: animationElements 2500ms -250ms;
-}
-
-.elements08 {
-  -webkit-animation: animationElements 2500ms -150ms;
-          animation: animationElements 2500ms -150ms;
-}
-
-.elements09 {
-  -webkit-animation: animationElements 2500ms -50ms;
-          animation: animationElements 2500ms -50ms;
 }
 /*# sourceMappingURL=loader.css.map */

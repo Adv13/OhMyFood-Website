@@ -1,4 +1,5 @@
 @import 'variable.scss';
+@import 'loader.scss';
 /******************** HEADER UPDATE *******************/
 
 .header__update{
@@ -17,7 +18,10 @@
 
 
 /****************************** MENUS ******************************/
-
+body{
+    width: auto;
+    margin: 0; 
+}
 /************************** MENUS IMAGES **************************/
 
 .img_menu{
@@ -49,6 +53,8 @@
 /********************* MENUS RESTAURANT *****************/
 
 .mainMenus{
+    display: flex;
+    flex-direction: column;
     background-color:$ThirdBackgroundColor;
 }
 
@@ -61,20 +67,6 @@
     margin-left:20px;
     padding:10px;
 }
-
-
-/*
-.titleRestaurant i{
-    padding-top:25px;
-    margin-right:50px;
-    color:$FourthColor;
-    -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: #303030;
-    &:hover{
-        -webkit-text-stroke-color:$PrimaryColor;
-        color:$PrimaryColor;
-    }
-}*/
 
 /********************** Checkbox coeur *************/
 
@@ -109,20 +101,21 @@
 /************************************/
 
 
-.positionGnl{
-    display:flex;
-    flex-direction: column;
-    padding: 0 20px 0 20px;
+.menu_restaurant{
+    width: 100%;
+    margin-top:-10px;
+    padding: 0;
 }
 
-.position{
-    display:flex;
-    flex-direction: column;
-    align-items:center;
+.restaurant_categories{
     padding: 0 10px 0 10px;
 }
 
-.position h5{
+.categories{
+    padding: 0 10px 0 10px;
+}
+
+.categories h5{
     display:flex;
     align-items:center;
     width:40px;
@@ -133,177 +126,129 @@
     border-top:none;
     border-left:none;
     border-right:none;
-    margin-left:20px;
     margin-top:30px;
-    margin-right:280px;
+    margin-bottom:10px;
 }
 
-   /* margin-top:-10px;
-    white-space: nowrap;
-    overflow: hidden;
-
-.text h4{
-    margin-top:10px;
-}
-.text p, h4{
-    width:210px;
-    margin-left:10px;
-}*/
-
-.categories_choix{
-    width:360px;
-    cursor: pointer;
-    margin-left:60px;
+.categorie_title{
+    margin-bottom: 5px;
+    margin-top: 10px;
+    font-weight: 100;
 }
 
 .choix_title, .choix_description{
     margin: 0;
 }
 
-.choix_description{
-    margin-top:5px;
-}
-
-.Text{
-    width: 80%;
+.choix_content{
     margin: 10px;
+    font-size:0.8em;
     white-space: nowrap;
     overflow: visible;
-    font-size:0.9em;
-}
-
-/*.prixAnim{
-    display:flex;
-    align-items: center;
-    background-color: white;
-    float: right;
-}*/
-
+    width: 50%;
+} 
 .tarifs{
     height: 30px;
     font-weight: bold;
-    margin-left: -1px;
-    margin-top:14px;
-    margin-bottom:10px;
-    padding-right:5px;
+    margin-left: 5px;
+    margin-right:5px;
 }
-
-.Check{ /*check*/
-    background-color:$ThirdColor;
-    width: 60px;
-    height: 60px;
+.check{
+    background-color: $ThirdColor;
+    width: 58px;
+    height: 58px;
     text-align: center;
     line-height: 58px;
-    margin-left: 5px;
+    margin-left: 20px;
+}
+ 
+.choix_description{
+    margin-top:7px;
+    font-weight: 50;
 }
 
 .choix_check{
     display: none;
 }
-
 .choix{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     width: 100%;
     height: 58px;
-    border-radius: 20px;
+    border-radius: 2vmin 2vmin 2vmin 2vmin;
+    box-shadow: 1px 0.5px 5px rgb(156, 156, 156);
     background-color: #fff;
     margin-bottom: 15px;
     overflow: hidden;
+    text-overflow: ellipsis;
     cursor: pointer;
     z-index: 1;
     opacity: 0;
 }
-
-.elements {
-    display:flex;
-    flex-wrap:wrap;
-    background-color: $ThirdBackgroundColor;
-}
-
-.text-overflow-ellipsis{
-    text-overflow: ellipsis;
-}
-
-/*.validate i{
-    font-weight: 900;
-    color: $FourthColor;
-    margin-top:20px;
-}
-
-.checkedcolor{
-    color:$PrimaryColor;
-}*/
-
-.Animation{
+.plat{
     display: flex;
+    flex-wrap: wrap;
+}
+.animation{
+    display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    background-color: $PrimaryBackgroundColor;
+    background-color: white;
     float: right;
-    padding: 0 0.15em;
-
     i{
         font-weight: 900;
-        color: $FourthColor;
-        padding: 0 0.15em;
+        color: white;
     }
 }
-
-/*************** animation choix du plat ***********/
-
-.elements .choix_check:checked + .choix + .plat_content .Animation{
+/*-----effet à la sélection d'une assiette-----*/
+.plat .choix_check:checked + .choix + .plat_content .animation{
     transform: translate(5%, 0);
     transition: 0.5s;
-    width: 60%;
     i{
-      transform: rotate(0deg);
-      transition: 1.5s;
-    }
-  }
-
-  .elements .choix_check + .choix + .plat_content .Animation{
-    transform: translate(60%, 0);
-    transition: 0.5s;
-    position: absolute;
-    margin-left: 62%;
-    i{
-      transform: rotate(-360deg);
-      transition: transform 500ms ease-in-out;
-    }
-  }
-
- .elements .choix_check:checked + .choix + .plat_content .Text{
-    animation: ellipsis;
-    animation-delay: 0.3s;
-    animation-fill-mode: both;
- }
-
-    @keyframes ellipsis{
-    from{
-        white-space: nowrap; 
-    }
-    to{
-        white-space: nowrap; 
-        overflow:hidden;
-        text-overflow:ellipsis;
+        transform: rotate(0deg);
+        transition: 1.5s;
     }
 }
+.plat .choix_check + .choix + .plat_content .animation{
+    transform: translate(60%, 0);
+    transition: 0.5s;
+    i{
+        transform: rotate(-360deg);
+        transition: 1.5s;
+    }
+}
+.plat .choix_check:checked + .choix + .plat_content .choix_content{
+    .choix_description, .choix_title{
+        animation: ellipsis;
+        animation-delay: 0.3s;
+        animation-fill-mode: both;
+        
+    }
+    @keyframes ellipsis{
+        from{
+            white-space: nowrap; 
+        }
+        to{
+            white-space: nowrap; 
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    }
+}
+/*******************************************/
 
-
-.elements .plat_content{
+.plat .plat_content{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 85%;
+    width: 90%;
     margin-right: 10px;
     height: 58px;
-    border-radius: 20px;
-    background-color: #fff;
     border-radius: 2vmin 2vmin 2vmin 2vmin;
     box-shadow: 1px 0.5px 5px rgb(156, 156, 156);
+    background-color: #fff;
     margin-bottom: 15px;
-    white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
     position: absolute;
@@ -345,14 +290,14 @@
 
 /*********************** SECTION MENUS ********************/
 
-.sectionMenus{
+.section_commander{
     background-color:$ThirdBackgroundColor;
     text-align:center;
     padding-top:50px;
     padding-bottom:50px;
 }
 
-.sectionMenus input{
+.section_commander input{
     width:200px;
     height:50px;
     background: linear-gradient($SecondaryColor, $PrimaryColor);

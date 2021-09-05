@@ -1,4 +1,87 @@
 @charset "UTF-8";
+.elements {
+  -webkit-animation: animationElements 500ms ease-in-out 150ms;
+          animation: animationElements 500ms ease-in-out 150ms;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+.element01 {
+  -webkit-animation: animationElements 0.5s;
+          animation: animationElements 0.5s;
+}
+
+.element02 {
+  -webkit-animation: animationElements 1s;
+          animation: animationElements 1s;
+}
+
+.element03 {
+  -webkit-animation: animationElements 1.5s;
+          animation: animationElements 1.5s;
+}
+
+.element04 {
+  -webkit-animation: animationElements 2s;
+          animation: animationElements 2s;
+}
+
+@-webkit-keyframes animationElements {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(9px);
+            transform: translateY(9px);
+  }
+  25% {
+    opacity: 0;
+    -webkit-transform: translateY(9px);
+            transform: translateY(9px);
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  75% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes animationElements {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(9px);
+            transform: translateY(9px);
+  }
+  25% {
+    opacity: 0;
+    -webkit-transform: translateY(9px);
+            transform: translateY(9px);
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  75% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
 /******************** HEADER UPDATE *******************/
 .header__update {
   display: -webkit-box;
@@ -19,6 +102,11 @@
 }
 
 /****************************** MENUS ******************************/
+body {
+  width: auto;
+  margin: 0;
+}
+
 /************************** MENUS IMAGES **************************/
 .img_menu {
   position: relative;
@@ -48,6 +136,13 @@
 
 /********************* MENUS RESTAURANT *****************/
 .mainMenus {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   background-color: #f6f6f6;
 }
 
@@ -65,18 +160,6 @@
   padding: 10px;
 }
 
-/*
-.titleRestaurant i{
-    padding-top:25px;
-    margin-right:50px;
-    color:$FourthColor;
-    -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: #303030;
-    &:hover{
-        -webkit-text-stroke-color:$PrimaryColor;
-        color:$PrimaryColor;
-    }
-}*/
 /********************** Checkbox coeur *************/
 .btn_like {
   font-size: 20px;
@@ -109,32 +192,21 @@
 }
 
 /************************************/
-.positionGnl {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding: 0 20px 0 20px;
+.menu_restaurant {
+  width: 100%;
+  margin-top: -10px;
+  padding: 0;
 }
 
-.position {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.restaurant_categories {
   padding: 0 10px 0 10px;
 }
 
-.position h5 {
+.categories {
+  padding: 0 10px 0 10px;
+}
+
+.categories h5 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -149,67 +221,47 @@
   border-top: none;
   border-left: none;
   border-right: none;
-  margin-left: 20px;
   margin-top: 30px;
-  margin-right: 280px;
+  margin-bottom: 10px;
 }
 
-/* margin-top:-10px;
-    white-space: nowrap;
-    overflow: hidden;
-
-.text h4{
-    margin-top:10px;
-}
-.text p, h4{
-    width:210px;
-    margin-left:10px;
-}*/
-.categories_choix {
-  width: 360px;
-  cursor: pointer;
-  margin-left: 60px;
+.categorie_title {
+  margin-bottom: 5px;
+  margin-top: 10px;
+  font-weight: 100;
 }
 
 .choix_title, .choix_description {
   margin: 0;
 }
 
-.choix_description {
-  margin-top: 5px;
-}
-
-.Text {
-  width: 80%;
+.choix_content {
   margin: 10px;
+  font-size: 0.8em;
   white-space: nowrap;
   overflow: visible;
-  font-size: 0.9em;
+  width: 50%;
 }
 
-/*.prixAnim{
-    display:flex;
-    align-items: center;
-    background-color: white;
-    float: right;
-}*/
 .tarifs {
   height: 30px;
   font-weight: bold;
-  margin-left: -1px;
-  margin-top: 14px;
-  margin-bottom: 10px;
-  padding-right: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
-.Check {
-  /*check*/
+.check {
   background-color: #99E2D0;
-  width: 60px;
-  height: 60px;
+  width: 58px;
+  height: 58px;
   text-align: center;
   line-height: 58px;
-  margin-left: 5px;
+  margin-left: 20px;
+}
+
+.choix_description {
+  margin-top: 7px;
+  font-weight: 50;
 }
 
 .choix_check {
@@ -227,90 +279,74 @@
           justify-content: space-between;
   width: 100%;
   height: 58px;
-  border-radius: 20px;
+  border-radius: 2vmin 2vmin 2vmin 2vmin;
+  -webkit-box-shadow: 1px 0.5px 5px #9c9c9c;
+          box-shadow: 1px 0.5px 5px #9c9c9c;
   background-color: #fff;
   margin-bottom: 15px;
   overflow: hidden;
+  text-overflow: ellipsis;
   cursor: pointer;
   z-index: 1;
   opacity: 0;
 }
 
-.elements {
+.plat {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  background-color: #f6f6f6;
 }
 
-.text-overflow-ellipsis {
-  text-overflow: ellipsis;
-}
-
-/*.validate i{
-    font-weight: 900;
-    color: $FourthColor;
-    margin-top:20px;
-}
-
-.checkedcolor{
-    color:$PrimaryColor;
-}*/
-.Animation {
+.animation {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #ffffff;
+  background-color: white;
   float: right;
-  padding: 0 0.15em;
 }
 
-.Animation i {
+.animation i {
   font-weight: 900;
-  color: #ffffff;
-  padding: 0 0.15em;
+  color: white;
 }
 
-/*************** animation choix du plat ***********/
-.elements .choix_check:checked + .choix + .plat_content .Animation {
+/*-----effet à la sélection d'une assiette-----*/
+.plat .choix_check:checked + .choix + .plat_content .animation {
   -webkit-transform: translate(5%, 0);
           transform: translate(5%, 0);
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  width: 60%;
 }
 
-.elements .choix_check:checked + .choix + .plat_content .Animation i {
+.plat .choix_check:checked + .choix + .plat_content .animation i {
   -webkit-transform: rotate(0deg);
           transform: rotate(0deg);
   -webkit-transition: 1.5s;
   transition: 1.5s;
 }
 
-.elements .choix_check + .choix + .plat_content .Animation {
+.plat .choix_check + .choix + .plat_content .animation {
   -webkit-transform: translate(60%, 0);
           transform: translate(60%, 0);
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  position: absolute;
-  margin-left: 62%;
 }
 
-.elements .choix_check + .choix + .plat_content .Animation i {
+.plat .choix_check + .choix + .plat_content .animation i {
   -webkit-transform: rotate(-360deg);
           transform: rotate(-360deg);
-  -webkit-transition: -webkit-transform 500ms ease-in-out;
-  transition: -webkit-transform 500ms ease-in-out;
-  transition: transform 500ms ease-in-out;
-  transition: transform 500ms ease-in-out, -webkit-transform 500ms ease-in-out;
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
 }
 
-.elements .choix_check:checked + .choix + .plat_content .Text {
+.plat .choix_check:checked + .choix + .plat_content .choix_content .choix_description, .plat .choix_check:checked + .choix + .plat_content .choix_content .choix_title {
   -webkit-animation: ellipsis;
           animation: ellipsis;
   -webkit-animation-delay: 0.3s;
@@ -341,7 +377,8 @@
   }
 }
 
-.elements .plat_content {
+/*******************************************/
+.plat .plat_content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -350,16 +387,14 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 85%;
+  width: 90%;
   margin-right: 10px;
   height: 58px;
-  border-radius: 20px;
-  background-color: #fff;
   border-radius: 2vmin 2vmin 2vmin 2vmin;
   -webkit-box-shadow: 1px 0.5px 5px #9c9c9c;
           box-shadow: 1px 0.5px 5px #9c9c9c;
+  background-color: #fff;
   margin-bottom: 15px;
-  white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   position: absolute;
@@ -398,14 +433,14 @@
 
 /* hide checkbox '✗'*/
 /*********************** SECTION MENUS ********************/
-.sectionMenus {
+.section_commander {
   background-color: #f6f6f6;
   text-align: center;
   padding-top: 50px;
   padding-bottom: 50px;
 }
 
-.sectionMenus input {
+.section_commander input {
   width: 200px;
   height: 50px;
   background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
@@ -419,7 +454,7 @@
   border: none;
 }
 
-.sectionMenus input:hover {
+.section_commander input:hover {
   background: #782cd3;
 }
 /*# sourceMappingURL=menus.css.map */
