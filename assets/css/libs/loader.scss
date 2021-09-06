@@ -34,23 +34,23 @@
 @keyframes animationElements {
   0% {
     opacity: 0;
-    transform: translateY(9px);
+    translate: transformY(9px);
   }
   25% {
     opacity: 0;
-    transform: translateY(9px);
+    translate: transform(9px);
   }
   50% {
     opacity: 1;
-    transform: translateY(0);
+    translate: transformY(0);
   }
   75% {
     opacity: 1;
-    transform: translateY(0);
+    translate: transformY(0);
   }
   100% {
     opacity: 1;
-    transform: translateY(0);
+    translate: transformY(0);
   }
   
 }

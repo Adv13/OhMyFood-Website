@@ -1,7 +1,7 @@
 @charset "UTF-8";
-.elements {
-  -webkit-animation: animationElements 500ms ease-in-out 150ms;
-          animation: animationElements 500ms ease-in-out 150ms;
+.plat {
+  -webkit-animation: animationElements 500ms ease-in-out;
+          animation: animationElements 500ms ease-in-out;
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
 }
@@ -26,59 +26,61 @@
           animation: animationElements 2s;
 }
 
+/*
+.element01{     
+  animation: animationElements 2500ms 850ms;
+}
+.element02{
+  animation: animationElements 2500ms 750ms;
+}
+.element03{
+  animation: animationElements 2500ms 650ms;
+}
+.element04{
+  animation: animationElements 2500ms -550ms;
+}*/
 @-webkit-keyframes animationElements {
   0% {
     opacity: 0;
-    -webkit-transform: translateY(9px);
-            transform: translateY(9px);
+    translate: transformY(9px);
   }
   25% {
     opacity: 0;
-    -webkit-transform: translateY(9px);
-            transform: translateY(9px);
+    translate: transform(9px);
   }
   50% {
     opacity: 1;
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
+    translate: transformY(0);
   }
   75% {
     opacity: 1;
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
+    translate: transformY(0);
   }
   100% {
     opacity: 1;
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
+    translate: transformY(0);
   }
 }
-
 @keyframes animationElements {
   0% {
     opacity: 0;
-    -webkit-transform: translateY(9px);
-            transform: translateY(9px);
+    translate: transformY(9px);
   }
   25% {
     opacity: 0;
-    -webkit-transform: translateY(9px);
-            transform: translateY(9px);
+    translate: transform(9px);
   }
   50% {
     opacity: 1;
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
+    translate: transformY(0);
   }
   75% {
     opacity: 1;
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
+    translate: transformY(0);
   }
   100% {
     opacity: 1;
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
+    translate: transformY(0);
   }
 }
 
@@ -155,7 +157,7 @@ body {
           justify-content: space-between;
   width: 90%;
   height: 40px;
-  margin-top: 20px;
+  margin-top: 10px;
   margin-left: 20px;
   padding: 10px;
 }
@@ -164,7 +166,7 @@ body {
 .btn_like {
   font-size: 20px;
   margin-right: 20px;
-  margin-top: 20px;
+  margin-top: 25px;
 }
 
 .btn_like .like {

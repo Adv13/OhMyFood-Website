@@ -88,13 +88,10 @@
           box-shadow: 1px 5px 10px #d8d8d8;
   border-radius: 6vmin 6vmin 6vmin 6vmin;
   border: none;
-  /*&:hover + .number{
-        background:lighten($SecondaryColor, 10);
-    }*/
 }
 
 .filters:hover {
-  background: #fface8;
+  background: #ffdff6;
 }
 
 .filters h5 {

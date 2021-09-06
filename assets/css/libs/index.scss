@@ -69,11 +69,8 @@
     border-radius:6vmin 6vmin 6vmin 6vmin;
     border:none;
     &:hover{
-        background:lighten($SecondaryColor, 10);
+        background:lighten($SecondaryColor, 20);
     }
-    /*&:hover + .number{
-        background:lighten($SecondaryColor, 10);
-    }*/
 }
 
 .filters h5{
