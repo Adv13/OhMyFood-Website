@@ -79,9 +79,6 @@
         justify-content: space-around;
   }
   /*************************************************************/
-  .btn_like {
-    margin-right: -50px;
-  }
   .restaurant_categories {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -132,9 +129,6 @@
         justify-content: space-around;
   }
   /********************************************************************/
-  .btn_like {
-    margin-right: -120px;
-  }
   .restaurant_categories {
     display: -webkit-box;
     display: -ms-flexbox;

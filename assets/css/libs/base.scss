@@ -2,21 +2,30 @@
 /********* BODY INDEX ********/
 body{
     font-family: 'roboto', sans-serif;
-    color:#303030;
     margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color:#303030;
 }
 
 a:link { 
     text-decoration:none; 
-    color:#303030;
+    color:$FourthColor;
 } 
 
 a:visited{
-    color:#303030;
+    color:$FourthColor;
 }
 
 .logoFont{
     font-family:'Shrikhand', sans-serif;
+}
+
+#logoFontFooter{
+    font-family:'Shrikhand', sans-serif;
+    font-size:1.5em;
+    color:$FourthColor;
 }
 
 .bold{
@@ -47,6 +56,7 @@ footer{
 
 .footer__links{
     color:$FourthColor;
+    line-height: 2.5em;
     padding:15px;
 }
 

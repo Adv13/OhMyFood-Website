@@ -277,6 +277,8 @@ body{
     margin-top:20px;
     border:none;
     &:hover{
-        background:darken($PrimaryColor, 10);
+        background:lighten($PrimaryColor, 20);
+        box-shadow: 1px 0.5px 10px rgb(156, 156, 156);
+        cursor: pointer;
     }
 }

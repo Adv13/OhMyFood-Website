@@ -1,23 +1,30 @@
-@charset "UTF-8";
 /********* BODY INDEX ********/
 body {
   font-family: 'roboto', sans-serif;
-  color: #303030;
   margin: 0 auto;
-  /*max-width:1950px;*/
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #303030;
 }
 
 a:link {
   text-decoration: none;
-  color: #303030;
+  color: #ffffff;
 }
 
 a:visited {
-  color: #303030;
+  color: #ffffff;
 }
 
 .logoFont {
   font-family: 'Shrikhand', sans-serif;
+}
+
+#logoFontFooter {
+  font-family: 'Shrikhand', sans-serif;
+  font-size: 1.5em;
+  color: #ffffff;
 }
 
 .bold {
@@ -32,7 +39,6 @@ a:visited {
 header {
   -webkit-box-shadow: 1px 0.5px 5px #9c9c9c;
           box-shadow: 1px 0.5px 5px #9c9c9c;
-  /* à optimiser pour ecrans +1600*/
 }
 
 h1 {
@@ -44,12 +50,11 @@ h1 {
 /********************** FOOTER *************************/
 footer {
   background-color: #353535;
-  /*background-color:#353535;*/
 }
 
 .footer__links {
   color: #ffffff;
-  /*color:#ffffff;*/
+  line-height: 2.5em;
   padding: 15px;
 }
 

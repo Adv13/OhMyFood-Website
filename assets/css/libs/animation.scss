@@ -1,0 +1,42 @@
+.plat{
+  animation: animationElements 500ms ease-in-out;
+  animation-fill-mode: both;
+}
+
+
+.element01{     
+  animation: animationElements 0.5s;
+}
+.element02{
+  animation: animationElements 1s;
+}
+.element03{
+  animation: animationElements 1.5s;
+}
+.element04{
+  animation: animationElements 2s;
+}
+
+@keyframes animationElements {
+  0% {
+    opacity: 0;
+    translate: transformY(9px);
+  }
+  25% {
+    opacity: 0;
+    translate: transform(9px);
+  }
+  50% {
+    opacity: 1;
+    translate: transformY(0);
+  }
+  75% {
+    opacity: 1;
+    translate: transformY(0);
+  }
+  100% {
+    opacity: 1;
+    translate: transformY(0);
+  }
+  
+}
