@@ -602,10 +602,10 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 90%;
+  width: 95%;
   height: 40px;
   margin-top: 10px;
-  margin-left: 20px;
+  margin-left: 10px;
   padding: 10px;
 }
 
@@ -655,7 +655,7 @@ body {
   padding: 0 10px 0 10px;
 }
 
-.categories h5 {
+.categorie_title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -670,14 +670,10 @@ body {
   border-top: none;
   border-left: none;
   border-right: none;
-  margin-top: 30px;
-  margin-bottom: 10px;
-}
-
-.categorie_title {
-  margin-bottom: 5px;
-  margin-top: 10px;
-  font-weight: 100;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  font-weight: bold;
+  font-size: 0.8em;
 }
 
 .choix_title, .choix_description {
@@ -927,6 +923,10 @@ body {
         justify-content: space-around;
   }
   /********************************************************************/
+  .titleRestaurant {
+    width: 92%;
+    margin-left: 10px;
+  }
 }
 
 /************************************************************************/
@@ -961,6 +961,7 @@ body {
   /*************************************************************/
   .titleRestaurant {
     width: 97%;
+    margin-left: 20px;
   }
   .restaurant_categories {
     display: -webkit-box;
@@ -1014,6 +1015,7 @@ body {
   /********************************************************************/
   .titleRestaurant {
     width: 97%;
+    margin-left: 35px;
   }
   .restaurant_categories {
     display: -webkit-box;
