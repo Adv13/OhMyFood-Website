@@ -1,24 +1,4 @@
 @charset "UTF-8";
-/**, *::before, *::after{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-    height: 100vh;
-    background: $ThirdBackgroundColor;
-  }*/
-#logoLoader {
-  color: #ffffff;
-  font-size: 3em;
-  font-family: 'Shrikhand', sans-serif;
-}
-
 @-webkit-keyframes loader {
   0% {
     opacity: 1;
@@ -33,7 +13,6 @@
     z-index: -1000;
   }
 }
-
 @keyframes loader {
   0% {
     opacity: 1;
@@ -248,7 +227,15 @@ footer i {
 .location i {
   width: 30px;
   height: 30px;
+  margin-left: 50px;
   margin-top: 15px;
+}
+
+.location input {
+  background-color: #eaeaea;
+  border: none;
+  font-size: 1em;
+  font-weight: bold;
 }
 
 /************************* SUBHEAD ***************************/
@@ -280,7 +267,7 @@ footer i {
 }
 
 /************************* MAIN ***********************/
-.main {
+main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -325,10 +312,14 @@ footer i {
 }
 
 .filters:hover {
-  background: white;
+  background: #f2eafb;
 }
 
-.filters h5 {
+.filters:hover i {
+  color: #6023a9;
+}
+
+.filters h4 {
   position: relative;
   width: 15px;
   height: 15px;
@@ -346,7 +337,7 @@ footer i {
 }
 
 /************************* SECTION **********************/
-.section {
+section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -403,17 +394,24 @@ footer i {
   padding-left: 20px;
 }
 
-.results h4, p {
+.results p {
   margin-left: 10px;
+}
+
+.results h1 {
+  font-size: 1.1em;
+  margin-left: 0px;
+  margin-top: 15px;
 }
 
 .news {
   position: absolute;
   padding-left: 180px;
   padding-top: 10px;
+  font-size: 0.5em;
 }
 
-.results h6 {
+.results h2 {
   background-color: #99E2D0;
   color: #1b6150;
   width: 45px;
@@ -422,29 +420,9 @@ footer i {
   margin-top: 15px;
 }
 
-.results h6:hover {
+.results h2:hover {
   background: #4acbab;
   color: white;
-}
-
-/**, *::before, *::after{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-    height: 100vh;
-    background: $ThirdBackgroundColor;
-  }*/
-#logoLoader {
-  color: #ffffff;
-  font-size: 3em;
-  font-family: 'Shrikhand', sans-serif;
 }
 
 @keyframes loader {
@@ -981,6 +959,9 @@ body {
         justify-content: space-around;
   }
   /*************************************************************/
+  .titleRestaurant {
+    width: 97%;
+  }
   .restaurant_categories {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1031,6 +1012,9 @@ body {
         justify-content: space-around;
   }
   /********************************************************************/
+  .titleRestaurant {
+    width: 97%;
+  }
   .restaurant_categories {
     display: -webkit-box;
     display: -ms-flexbox;

@@ -12,7 +12,16 @@
 .location i{
     width:30px;
     height:30px;
+    margin-left:50px;
     margin-top:15px;
+}
+
+.location input{
+    background-color:$SecondaryBackgroundColor;
+    border:none;
+    font-size:1em;
+    font-weight:bold;
+
 }
 
 /************************* SUBHEAD ***************************/
@@ -42,7 +51,7 @@
 
 /************************* MAIN ***********************/
 
-.main{
+main{
     display:flex;
     flex-direction:column;
     padding-top:40px;
@@ -67,11 +76,14 @@
     border-radius:6vmin 6vmin 6vmin 6vmin;
     border:none;
     &:hover{
-        background:lighten($SecondaryColor, 30);
+        background:lighten($PrimaryColor, 35);
+        i{
+            color:darken($PrimaryColor,20);
+        }
     }
 }
 
-.filters h5{
+.filters h4{
     position:relative;
     width:15px;
     height:15px;
@@ -90,7 +102,7 @@
 
 /************************* SECTION **********************/
 
-.section{
+section{
     display:flex;
     flex-direction:column;
     justify-content: space-around;
@@ -130,17 +142,24 @@
     padding-left:20px;
 }
 
-.results h4, p{
+.results p{
     margin-left:10px;
+}
+
+.results h1{
+    font-size:1.1em;
+    margin-left:0px;
+    margin-top:15px;
 }
 
 .news{
     position:absolute;
     padding-left:180px;
     padding-top:10px;
+    font-size:0.5em;
 }
 
-.results h6{
+.results h2{
     background-color: $ThirdColor;
     color:darken($ThirdColor, 50);
     width:45px;

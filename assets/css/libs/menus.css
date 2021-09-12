@@ -1,24 +1,4 @@
 @charset "UTF-8";
-/**, *::before, *::after{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-    height: 100vh;
-    background: $ThirdBackgroundColor;
-  }*/
-#logoLoader {
-  color: #ffffff;
-  font-size: 3em;
-  font-family: 'Shrikhand', sans-serif;
-}
-
 @-webkit-keyframes loader {
   0% {
     opacity: 1;
@@ -33,7 +13,6 @@
     z-index: -1000;
   }
 }
-
 @keyframes loader {
   0% {
     opacity: 1;

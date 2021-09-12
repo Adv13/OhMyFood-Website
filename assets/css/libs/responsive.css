@@ -79,6 +79,9 @@
         justify-content: space-around;
   }
   /*************************************************************/
+  .titleRestaurant {
+    width: 97%;
+  }
   .restaurant_categories {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -129,6 +132,9 @@
         justify-content: space-around;
   }
   /********************************************************************/
+  .titleRestaurant {
+    width: 97%;
+  }
   .restaurant_categories {
     display: -webkit-box;
     display: -ms-flexbox;
