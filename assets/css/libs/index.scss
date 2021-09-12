@@ -146,20 +146,20 @@ section{
     margin-left:10px;
 }
 
-.results h1{
+.results h2{
     font-size:1.1em;
-    margin-left:0px;
-    margin-top:15px;
+    margin-left:10px;
+    margin-top:20px;
 }
 
 .news{
     position:absolute;
     padding-left:180px;
     padding-top:10px;
-    font-size:0.5em;
+    font-size:0.6em;
 }
 
-.results h2{
+.results h3{
     background-color: $ThirdColor;
     color:darken($ThirdColor, 50);
     width:45px;
