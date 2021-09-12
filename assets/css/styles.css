@@ -634,7 +634,7 @@ body {
   content: "";
   font-weight: 900;
   color: transparent;
-  background: #9356DC;
+  background: linear-gradient(10deg, #FF79DA, 40%, #9356DC);
   -webkit-background-clip: text;
   -webkit-transition-duration: 0.5s;
           transition-duration: 0.5s;

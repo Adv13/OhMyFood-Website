@@ -96,9 +96,9 @@ body{
         content: ("\f004");
         font-weight: 900;
         color: transparent; 
-        background:$PrimaryColor;
-        -webkit-background-clip: text;
-        transition-duration: 0.5s;
+        background: linear-gradient(10deg, $SecondaryColor, 40%, $PrimaryColor);
+        -webkit-background-clip:text;
+        transition-duration:0.5s;
     }
 }
 
